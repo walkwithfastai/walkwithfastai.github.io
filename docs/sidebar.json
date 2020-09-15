@@ -1,5 +1,25 @@
 {
-  "Walk with fastai": {
-    "Overview": "/"
+  "Introduction": {
+    "What is this book": "/",
+    "Using nbdev": "/nbdev",
+    "How to contribute a chapter": "/contrib.chapter",
+    "Contributing to the fastai library": "/contrib.fastai"
+  },
+  "fastai API": {
+    "High-Level API": "/api/high_level",
+    "Low-Level API": "/api/low_level",
+    "Low to High Level": "/api/low_to_high",
+    "High to Low Level": "/api/high_to_low"
+  },
+  "Vision": {
+    "Classification" : {
+        "Single Label": "/vision/single_label",
+        "Multi-Label": "/vision/multi_label",
+        "Saying I don't know": "vision/uncertainty"
+      },
+    "Regression" : {
+      "Scalar Regression": "/regression/scalar",
+      "Point Regression": "/regression/point"
+      }
   }
 }
