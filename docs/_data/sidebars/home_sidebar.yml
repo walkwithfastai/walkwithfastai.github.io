@@ -278,7 +278,7 @@ entries:
       title: GPU Notes
       url: /dev/gpu
     - output: web,pdf
-      title: git Notes
+      title: Git Notes
       url: /dev/git
     - output: web,pdf
       title: Notes

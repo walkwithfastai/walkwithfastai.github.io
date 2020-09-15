@@ -122,7 +122,7 @@
         "Abbreviation Guide": "/dev/abbr",
         "Style Guide": "/dev/style",
         "GPU Notes": "/dev/gpu",
-        "git Notes": "/dev/git",
+        "Git Notes": "/dev/git",
         "Notes": "/dev/develop"
     }
 }
