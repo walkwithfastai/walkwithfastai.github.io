@@ -78,24 +78,24 @@
     },
     
     "Vision": {
-        "Augmentation": "/vision.augment",
         "Core": "/vision.core",
         "Data": "/vision.data",
-        "GAN": "/vision.gan",
         "Learner": "/vision.learner",
         "": {
             "Models": {
                 "XResnet": "/vision.models.xresnet",
                 "Unet": "/vision.models.unet"
             }
-        },
+        },        
+        "Augmentation": "/vision.augment",
+        "GAN": "/vision.gan",
         "Utils": "/vision.utils",
         "Widgets": "/vision.widgets"
     },
     "Text": {
-        "Text Core": "/text.core",
-        "Text Data": "/text.data",
-        "Text Learner": "/text.learner",
+        "Core": "/text.core",
+        "Data": "/text.data",
+        "Learner": "/text.learner",
         "": {
             "Models": {
                 "Core": "/text.models.core",
@@ -105,15 +105,15 @@
         }
     },
     "Tabular": {
-        "Tabular Core": "/tabular.core",
-        "Tabular Data": "/tabular.data",
-        "Tabular Learner": "/tabular.learner",
-        "Tabular Model": "/tabular.model",
+        "Core": "/tabular.core",
+        "Data": "/tabular.data",
+        "Learner": "/tabular.learner",
+        "Model": "/tabular.model",
         "Collab": "/collab"
     },
     "Medical": {
-        "Medical Imagery": "/medical.imaging",
-        "Medical Text": "/medical.text"
+        "Imagery": "/medical.imaging",
+        "Text": "/medical.text"
     },
     "fastai development": {
         "Developers Guide": "/dev-setup",

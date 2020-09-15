@@ -177,17 +177,11 @@ entries:
     title: Integrations
   - folderitems:
     - output: web,pdf
-      title: Augmentation
-      url: /vision.augment
-    - output: web,pdf
       title: Core
       url: /vision.core
     - output: web,pdf
       title: Data
       url: /vision.data
-    - output: web,pdf
-      title: GAN
-      url: /vision.gan
     - output: web,pdf
       title: Learner
       url: /vision.learner
@@ -202,6 +196,12 @@ entries:
           url: /vision.models.unet
         title: Models
     - output: web,pdf
+      title: Augmentation
+      url: /vision.augment
+    - output: web,pdf
+      title: GAN
+      url: /vision.gan
+    - output: web,pdf
       title: Utils
       url: /vision.utils
     - output: web,pdf
@@ -211,13 +211,13 @@ entries:
     title: Vision
   - folderitems:
     - output: web,pdf
-      title: Text Core
+      title: Core
       url: /text.core
     - output: web,pdf
-      title: Text Data
+      title: Data
       url: /text.data
     - output: web,pdf
-      title: Text Learner
+      title: Learner
       url: /text.learner
       subfolders:
       - output: web
@@ -236,16 +236,16 @@ entries:
     title: Text
   - folderitems:
     - output: web,pdf
-      title: Tabular Core
+      title: Core
       url: /tabular.core
     - output: web,pdf
-      title: Tabular Data
+      title: Data
       url: /tabular.data
     - output: web,pdf
-      title: Tabular Learner
+      title: Learner
       url: /tabular.learner
     - output: web,pdf
-      title: Tabular Model
+      title: Model
       url: /tabular.model
     - output: web,pdf
       title: Collab
@@ -254,10 +254,10 @@ entries:
     title: Tabular
   - folderitems:
     - output: web,pdf
-      title: Medical Imagery
+      title: Imagery
       url: /medical.imaging
     - output: web,pdf
-      title: Medical Text
+      title: Text
       url: /medical.text
     output: web
     title: Medical
