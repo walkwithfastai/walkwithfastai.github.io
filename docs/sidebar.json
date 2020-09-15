@@ -75,12 +75,8 @@
     
     "Vision": {
         "Core": "/vision.core",
-        "empty1": {
-            "Data": {
-                "Augmentation": "/vision.augment",
-                "Core": "/vision.data"
-            }
-        },
+        "Data": "/vision.data",
+        "Data Augmentation": "/vision.augment",
         "Learner": "/vision.learner",
         "empty2": {
             "Models": {
