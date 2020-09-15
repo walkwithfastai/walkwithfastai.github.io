@@ -10,7 +10,7 @@ entries:
       title: Overview
       url: /
     - output: web,pdf
-      title: Quick start
+      title: Quick Start
       url: /quick_start.html
     output: web
     title: Getting started
@@ -22,43 +22,43 @@ entries:
       - output: web
         subfolderitems:
         - output: web,pdf
-          title: Vision tutorial
+          title: Vision Tutorial
           url: /tutorial.vision
         - output: web,pdf
-          title: Text tutorial
+          title: Text Tutorial
           url: /tutorial.text
         - output: web,pdf
-          title: Tabular tutorial
+          title: Tabular Tutorial
           url: /tutorial.tabular
         - output: web,pdf
-          title: Collab tutorial
+          title: Collab Tutorial
           url: /tutorial.collab
         title: Beginners
       - output: web
         subfolderitems:
         - output: web,pdf
-          title: Data block tutorial
+          title: Data block Tutorial
           url: /tutorial.datablock
         - output: web,pdf
-          title: Imagenette tutorial
+          title: Imagenette Tutorial
           url: /tutorial.imagenette
         - output: web,pdf
-          title: Pets tutorial
+          title: Pets Tutorial
           url: /tutorial.pets
         - output: web,pdf
-          title: Transformers tutorial
+          title: Transformers Tutorial
           url: /tutorial.transformers
         - output: web,pdf
-          title: Wikitext tutorial
+          title: Wikitext Tutorial
           url: /tutorial.wikitext
         title: Intermediate
       - output: web
         subfolderitems:
         - output: web,pdf
-          title: Siamese tutorial
+          title: Siamese Tutorial
           url: /tutorial.siamese
         - output: web,pdf
-          title: Albumentions tutorial
+          title: Albumentions Tutorial
           url: /tutorial.albumentions
         title: Advanced
       - output: web
@@ -80,7 +80,7 @@ entries:
     title: Tutorials
   - folderitems:
     - output: web,pdf
-      title: Training loop
+      title: Training Loop
       url: /learner
     - output: web,pdf
       title: Optimizer
@@ -165,26 +165,32 @@ entries:
     title: Core
   - folderitems:
     - output: web,pdf
-      title: Vision Learner
-      url: /vision.learner
+      title: Neptune
+      url: /callback.neptune
     - output: web,pdf
-      title: Vision Data Augmentation
+      title: TensorBoard
+      url: /callback.tensorboard
+    - output: web,pdf
+      title: Weights & Biases
+      url: /callback.wandb
+    output: web
+    title: Integrations
+  - folderitems:
+    - output: web,pdf
+      title: Augmentation
       url: /vision.augment
     - output: web,pdf
-      title: Vision Data
-      url: /vision.data
-    - output: web,pdf
-      title: Vision Core
+      title: Core
       url: /vision.core
     - output: web,pdf
-      title: Vision Utils
-      url: /vision.utils
-    - output: web,pdf
-      title: Vision Widgets
-      url: /vision.widgets
+      title: Data
+      url: /vision.data
     - output: web,pdf
       title: GAN
       url: /vision.gan
+    - output: web,pdf
+      title: Learner
+      url: /vision.learner
       subfolders:
       - output: web
         subfolderitems:
@@ -195,6 +201,12 @@ entries:
           title: Unet
           url: /vision.models.unet
         title: Models
+    - output: web,pdf
+      title: Utils
+      url: /vision.utils
+    - output: web,pdf
+      title: Widgets
+      url: /vision.widgets
     output: web
     title: Vision
   - folderitems:
@@ -242,40 +254,28 @@ entries:
     title: Tabular
   - folderitems:
     - output: web,pdf
-      title: Medical imagery
+      title: Medical Imagery
       url: /medical.imaging
     - output: web,pdf
-      title: Medical text
+      title: Medical Text
       url: /medical.text
     output: web
     title: Medical
   - folderitems:
     - output: web,pdf
-      title: Neptune
-      url: /callback.neptune
-    - output: web,pdf
-      title: TensorBoard
-      url: /callback.tensorboard
-    - output: web,pdf
-      title: WandB
-      url: /callback.wandb
-    output: web
-    title: Integrations
-  - folderitems:
-    - output: web,pdf
-      title: Developers guide
+      title: Developers Guide
       url: /dev-setup
     - output: web,pdf
-      title: Abbreviation guide
+      title: Abbreviation Guide
       url: /dev/abbr
     - output: web,pdf
-      title: Style guide
+      title: Style Guide
       url: /dev/style
     - output: web,pdf
       title: GPU Notes
       url: /dev/gpu
     - output: web,pdf
-      title: git notes
+      title: git Notes
       url: /dev/git
     - output: web,pdf
       title: Notes

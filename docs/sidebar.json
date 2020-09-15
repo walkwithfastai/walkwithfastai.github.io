@@ -1,31 +1,31 @@
 {
     "Getting started": {
         "Overview": "/",
-        "Quick start": "/quick_start.html"
+        "Quick Start": "/quick_start.html"
     },
     "Tutorials": {
         "Overview": "/tutorial",
         "": {
             "Beginners": {
-                "Vision tutorial": "/tutorial.vision",
-                "Text tutorial": "/tutorial.text",
-                "Tabular tutorial": "/tutorial.tabular",
-                "Collab tutorial": "/tutorial.collab"
+                "Vision Tutorial": "/tutorial.vision",
+                "Text Tutorial": "/tutorial.text",
+                "Tabular Tutorial": "/tutorial.tabular",
+                "Collab Tutorial": "/tutorial.collab"
             }
         },
         "empty1": {
             "Intermediate": {
-                "Data block tutorial": "/tutorial.datablock",
-                "Imagenette tutorial": "/tutorial.imagenette",
-                "Pets tutorial": "/tutorial.pets",
-                "Transformers tutorial": "/tutorial.transformers",
-                "Wikitext tutorial": "/tutorial.wikitext"
+                "Data block Tutorial": "/tutorial.datablock",
+                "Imagenette Tutorial": "/tutorial.imagenette",
+                "Pets Tutorial": "/tutorial.pets",
+                "Transformers Tutorial": "/tutorial.transformers",
+                "Wikitext Tutorial": "/tutorial.wikitext"
             }
         },
         "empty2": {
             "Advanced": {
-                "Siamese tutorial": "/tutorial.siamese",
-                "Albumentions tutorial": "/tutorial.albumentions"
+                "Siamese Tutorial": "/tutorial.siamese",
+                "Albumentions Tutorial": "/tutorial.albumentions"
             }
         },
         "empty3": {
@@ -38,7 +38,7 @@
         }
     },
     "Training": {
-        "Training loop": "/learner",
+        "Training Loop": "/learner",
         "Optimizer": "/optimizer",
         "Metrics": "/metrics",
         "Interpretation": "/interpret",
@@ -71,20 +71,26 @@
         "PyTorch Core": "/torch_core",
         "Layers": "/layers"
     },
+    "Integrations": {
+        "Neptune": "/callback.neptune",
+        "TensorBoard": "/callback.tensorboard",
+        "Weights & Biases": "/callback.wandb"
+    },
+    
     "Vision": {
-        "Vision Learner": "/vision.learner",
-        "Vision Data Augmentation": "/vision.augment",
-        "Vision Data": "/vision.data",
-        "Vision Core": "/vision.core",
-        "Vision Utils": "/vision.utils",
-        "Vision Widgets": "/vision.widgets",
+        "Augmentation": "/vision.augment",
+        "Core": "/vision.core",
+        "Data": "/vision.data",
         "GAN": "/vision.gan",
+        "Learner": "/vision.learner",
         "": {
             "Models": {
                 "XResnet": "/vision.models.xresnet",
                 "Unet": "/vision.models.unet"
             }
-        }
+        },
+        "Utils": "/vision.utils",
+        "Widgets": "/vision.widgets"
     },
     "Text": {
         "Text Core": "/text.core",
@@ -106,20 +112,15 @@
         "Collab": "/collab"
     },
     "Medical": {
-        "Medical imagery": "/medical.imaging",
-        "Medical text": "/medical.text"
-    },
-    "Integrations": {
-        "Neptune": "/callback.neptune",
-        "TensorBoard": "/callback.tensorboard",
-        "WandB": "/callback.wandb"
+        "Medical Imagery": "/medical.imaging",
+        "Medical Text": "/medical.text"
     },
     "fastai development": {
-        "Developers guide": "/dev-setup",
-        "Abbreviation guide": "/dev/abbr",
-        "Style guide": "/dev/style",
+        "Developers Guide": "/dev-setup",
+        "Abbreviation Guide": "/dev/abbr",
+        "Style Guide": "/dev/style",
         "GPU Notes": "/dev/gpu",
-        "git notes": "/dev/git",
+        "git Notes": "/dev/git",
         "Notes": "/dev/develop"
     }
 }
