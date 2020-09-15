@@ -199,7 +199,7 @@ entries:
       title: Augmentation
       url: /vision.augment
     - output: web,pdf
-      title: GAN
+      title: Generative Adversarial Networks
       url: /vision.gan
     - output: web,pdf
       title: Utils
