@@ -10,8 +10,8 @@ entries:
       title: Overview
       url: /
     - output: web,pdf
-      title: module name here
-      url: core.html
+      title: What is this book/website?
+      url: introduction.about.html
     output: web
     title: Walk with fastai
   output: web
