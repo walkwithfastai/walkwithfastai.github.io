@@ -170,19 +170,16 @@ entries:
     - output: web,pdf
       title: Core
       url: /vision.core
-      subfolders:
-      - output: web
-        subfolderitems:
-        - output: web,pdf
-          title: Core
-          url: /vision.data
-        - output: web,pdf
-          title: Augmentation
-          url: /vision.augment
-        title: Data
+    - output: web,pdf
+      title: Data
+      url: /vision.data
+    - output: web,pdf
+      title: Data Augmentation
+      url: /vision.augment
     - output: web,pdf
       title: Learner
       url: /vision.learner
+      subfolders:
       - output: web
         subfolderitems:
         - output: web,pdf
