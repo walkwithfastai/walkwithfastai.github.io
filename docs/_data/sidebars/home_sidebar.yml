@@ -36,9 +36,6 @@ entries:
     output: web
     title: fastai API
   - folderitems:
-    - output: web,pdf
-      title: Overview
-      url: /tutorial
       subfolders:
       - output: web
         subfolderitems:

@@ -12,7 +12,6 @@
     "High to Low Level": "/api/high_to_low"
   },
   "Vision": {
-    "Overview": "/tutorial",
     "": {
         "Classification" : {
             "Single Label": "/vision/single_label",
