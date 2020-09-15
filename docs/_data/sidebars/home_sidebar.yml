@@ -179,6 +179,7 @@ entries:
     - output: web,pdf
       title: Learner
       url: /vision.learner
+      subfolders:
       - output: web
         subfolderitems:
         - output: web,pdf

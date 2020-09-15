@@ -78,7 +78,7 @@
         "Data": "/vision.data",
         "Data Augmentation": "/vision.augment",
         "Learner": "/vision.learner",
-        "empty2": {
+        "": {
             "Models": {
                 "XResnet": "/vision.models.xresnet",
                 "Unet": "/vision.models.unet"
