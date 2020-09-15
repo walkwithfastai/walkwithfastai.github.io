@@ -14,7 +14,7 @@ h4 {color: #000000; }
 }
 
 .nav > li.active > a {
-    background-color: #347DBE;
+    background-color: #228B31;
 }
 
 .nav > li > a:hover {
@@ -22,7 +22,7 @@ h4 {color: #000000; }
 }
 
 div.navbar-collapse .dropdown-menu > li > a:hover {
-    background-color: #347DBE;
+    background-color: #228B31;
 }
 
 .nav li.thirdlevel > a {
@@ -38,7 +38,7 @@ a[data-toggle="tooltip"] {
 }
 
 .navbar-inverse {
-    background-color: #347DBE;
+    background-color: #228B31;
     border-color: #015CAE;
 }
 .navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand {
@@ -68,12 +68,12 @@ a.navbar-brand:hover {
 
 .btn-primary {
     color: #ffffff;
-    background-color: #347DBE;
-    border-color: #347DBE;
+    background-color: #228B31;
+    border-color: #228B31;
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-    background-color: #347DBE;
+    background-color: #228B31;
 }
 
 .btn-primary:hover,
@@ -82,7 +82,7 @@ a.navbar-brand:hover {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
     background-color: #228B22;
-    border-color: #347DBE;
+    border-color: #228B31;
 }
 
 .printTitle {
