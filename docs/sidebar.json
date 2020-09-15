@@ -80,12 +80,8 @@
     
     "Vision": {
         "Core": "/vision.core",
-        "": {
-            "Data": {
-                "Augmentation": "/vision.augment",
-                "Core": "/vision.data"
-            }
-        },
+        "Augmentation": "/vision.augment",
+        "Data": "/vision.data",
         "Learner": "/vision.learner",
         "empty1": {
             "Models": {
