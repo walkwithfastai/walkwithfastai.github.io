@@ -37,7 +37,7 @@ entries:
       - output: web
         subfolderitems:
         - output: web,pdf
-          title: Data block Tutorial
+          title: DataBlock Tutorial
           url: /tutorial.datablock
         - output: web,pdf
           title: Imagenette Tutorial
@@ -58,11 +58,11 @@ entries:
       - output: web
         subfolderitems:
         - output: web,pdf
-          title: Siamese Tutorial
-          url: /tutorial.siamese
-        - output: web,pdf
           title: Albumentions Tutorial
           url: /tutorial.albumentions
+        - output: web,pdf
+          title: Siamese Tutorial
+          url: /tutorial.siamese
         title: Advanced
       - output: web
         subfolderitems:

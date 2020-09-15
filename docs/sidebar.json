@@ -15,7 +15,7 @@
         },
         "empty1": {
             "Intermediate": {
-                "Data block Tutorial": "/tutorial.datablock",
+                "DataBlock Tutorial": "/tutorial.datablock",
                 "Imagenette Tutorial": "/tutorial.imagenette",
                 "Medical Imaging Tutorial": "/tutorial.medical_imaging",
                 "Pets Tutorial": "/tutorial.pets",
@@ -25,8 +25,8 @@
         },
         "empty2": {
             "Advanced": {
-                "Siamese Tutorial": "/tutorial.siamese",
-                "Albumentions Tutorial": "/tutorial.albumentions"
+                "Albumentions Tutorial": "/tutorial.albumentions",
+                "Siamese Tutorial": "/tutorial.siamese"
             }
         },
         "empty3": {
