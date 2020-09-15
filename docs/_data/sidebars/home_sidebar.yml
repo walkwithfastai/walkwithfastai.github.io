@@ -13,6 +13,6 @@ entries:
       title: module name here
       url: core.html
     output: web
-    title: walkwithfastai
+    title: Walk with fastai
   output: web
   title: Sidebar
