@@ -43,6 +43,9 @@ entries:
           title: Imagenette Tutorial
           url: /tutorial.imagenette
         - output: web,pdf
+          title: Medical Imaging Tutorial
+          url: /tutorial.medical_imaging
+        - output: web,pdf
           title: Pets Tutorial
           url: /tutorial.pets
         - output: web,pdf
@@ -75,7 +78,7 @@ entries:
         - output: web,pdf
           title: Catalyst
           url: /migrating_catalyst
-        title: Migrating from other libraries
+        title: Migrating from Other Libraries
     output: web
     title: Tutorials
   - folderitems:
@@ -138,20 +141,20 @@ entries:
     title: Training
   - folderitems:
     - output: web,pdf
-      title: Data Blocks
+      title: Blocks
       url: /data.block
     - output: web,pdf
-      title: Data Transforms
-      url: /data.transforms
-    - output: web,pdf
-      title: Data External
-      url: /data.external
-    - output: web,pdf
-      title: Data Core
+      title: Core
       url: /data.core
     - output: web,pdf
       title: DataLoader
       url: /data.load
+    - output: web,pdf
+      title: External
+      url: /data.external
+    - output: web,pdf
+      title: Transforms
+      url: /data.transforms
     output: web
     title: Data
   - folderitems:
@@ -179,13 +182,22 @@ entries:
     - output: web,pdf
       title: Core
       url: /vision.core
+      subfolders:
+      - output: web
+        subfolderitems:
+        - output: web,pdf
+          title: Augmentation
+          url: /vision.augment
+        - output: web,pdf
+          title: Core
+          url: /vision.data
+        title: Data
     - output: web,pdf
       title: Data
       url: /vision.data
     - output: web,pdf
       title: Learner
       url: /vision.learner
-      subfolders:
       - output: web
         subfolderitems:
         - output: web,pdf
@@ -196,13 +208,10 @@ entries:
           url: /vision.models.unet
         title: Models
     - output: web,pdf
-      title: Augmentation
-      url: /vision.augment
-    - output: web,pdf
       title: GAN
       url: /vision.gan
     - output: web,pdf
-      title: Utils
+      title: Utilities
       url: /vision.utils
     - output: web,pdf
       title: Widgets
@@ -281,6 +290,6 @@ entries:
       title: Notes
       url: /dev/develop
     output: web
-    title: fastai development
+    title: fastai Development
   output: web
   title: Sidebar

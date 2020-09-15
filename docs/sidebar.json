@@ -17,6 +17,7 @@
             "Intermediate": {
                 "Data block Tutorial": "/tutorial.datablock",
                 "Imagenette Tutorial": "/tutorial.imagenette",
+                "Medical Imaging Tutorial": "/tutorial.medical_imaging",
                 "Pets Tutorial": "/tutorial.pets",
                 "Transformers Tutorial": "/tutorial.transformers",
                 "Wikitext Tutorial": "/tutorial.wikitext"
@@ -29,7 +30,7 @@
             }
         },
         "empty3": {
-            "Migrating from other libraries": {
+            "Migrating from Other Libraries": {
                 "Plain PyTorch": "/migrating_pytorch",
                 "Ignite": "/migrating_ignite",
                 "Lightning": "/migrating_lightning",
@@ -61,11 +62,11 @@
         }
     },
     "Data": {
-        "Data Blocks": "/data.block",
-        "Data Transforms": "/data.transforms",
-        "Data External": "/data.external",
-        "Data Core": "/data.core",
-        "DataLoader": "/data.load"
+        "Blocks": "/data.block",
+        "Core": "/data.core",
+        "DataLoader": "/data.load",
+        "External": "/data.external",
+        "Transforms": "/data.transforms"
     },
     "Core": {
         "PyTorch Core": "/torch_core",
@@ -79,17 +80,22 @@
     
     "Vision": {
         "Core": "/vision.core",
+        "": {
+            "Data": {
+                "Augmentation": "/vision.augment",
+                "Core": "/vision.data"
+            }
+        },
         "Data": "/vision.data",
         "Learner": "/vision.learner",
-        "": {
+        "empty1": {
             "Models": {
                 "XResnet": "/vision.models.xresnet",
                 "Unet": "/vision.models.unet"
             }
         },        
-        "Augmentation": "/vision.augment",
         "GAN": "/vision.gan",
-        "Utils": "/vision.utils",
+        "Utilities": "/vision.utils",
         "Widgets": "/vision.widgets"
     },
     "Text": {
@@ -115,7 +121,7 @@
         "Imagery": "/medical.imaging",
         "Text": "/medical.text"
     },
-    "fastai development": {
+    "fastai Development": {
         "Developers Guide": "/dev-setup",
         "Abbreviation Guide": "/dev/abbr",
         "Style Guide": "/dev/style",
