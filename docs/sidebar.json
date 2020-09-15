@@ -88,7 +88,7 @@
             }
         },        
         "Augmentation": "/vision.augment",
-        "Generative Adversarial Networks": "/vision.gan",
+        "GAN": "/vision.gan",
         "Utils": "/vision.utils",
         "Widgets": "/vision.widgets"
     },
