@@ -193,9 +193,6 @@ entries:
           url: /vision.data
         title: Data
     - output: web,pdf
-      title: Data
-      url: /vision.data
-    - output: web,pdf
       title: Learner
       url: /vision.learner
       - output: web

@@ -86,7 +86,6 @@
                 "Core": "/vision.data"
             }
         },
-        "Data": "/vision.data",
         "Learner": "/vision.learner",
         "empty1": {
             "Models": {
