@@ -16,7 +16,7 @@
         "Classification" : {
             "Single Label": "/vision/single_label",
             "Multi-Label": "/vision/multi_label",
-            "Saying I don't know": "vision/uncertainty"
+            "Saying I dont know": "vision/uncertainty"
           }
     },
     "empty2": {

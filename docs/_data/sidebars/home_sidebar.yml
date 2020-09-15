@@ -4,42 +4,61 @@
 #################################################
 # Instead edit ../../sidebar.json
 entries:
-  - title: Group 1
-    subfolderitems:
-      - page: Thing 1
-        url: /thing1.html
-      - page: Thing 2
-        url: /thing2.html
-        subsubfolderitems:
-          - page: Subthing 1
-            url: /subthing1.html
-          - page: Subthing 2
-            url: /subthing2.html
-      - page: Thing 3
-        url: /thing3.html
-  - title: Group 2
-    subfolderitems:
-      - page: Piece 1
-        url: /piece1.html
-      - page: Piece 2
-        url: /piece2.html
-      - page: Piece 3
-        url: /piece3.html
-        subsubfolderitems:
-          - page: Subpiece 1
-            url: /subpiece1.html
-          - page: Subpiece2
-            url: /subpiece2.html
-  - title: Group 3
-    subfolderitems:
-      - page: Widget 1
-        url: /widget1.html
-        subsubfolderitems:
-          - page: Subwidget 1
-            url: /subwidget1.html
-          - page: Subwidget 2
-            url: /subwidget2.html
-      - page: Widget 2
-        url: /widget2.html
-      - page: Widget 3
-        url: /widget3.html
+- folders:
+  - folderitems:
+    - output: web,pdf
+      title: What is this book
+      url: /
+    - output: web,pdf
+      title: Using nbdev
+      url: /nbdev
+    - output: web,pdf
+      title: How to contribute a chapter
+      url: /contrib.chapter
+    - output: web,pdf
+      title: Contributing to the fastai library
+      url: /contrib.fastai
+    output: web
+    title: Introduction
+  - folderitems:
+    - output: web,pdf
+      title: High-Level API
+      url: /api/high_level
+    - output: web,pdf
+      title: Low-Level API
+      url: /api/low_level
+    - output: web,pdf
+      title: Low to High Level
+      url: /api/low_to_high
+    - output: web,pdf
+      title: High to Low Level
+      url: /api/high_to_low
+    output: web
+    title: fastai API
+  - folderitems:
+      subfolders:
+      - output: web
+        subfolderitems:
+        - output: web,pdf
+          title: Single Label
+          url: /vision/single_label
+        - output: web,pdf
+          title: Multi-Label
+          url: /vision/multi_label
+        - output: web,pdf
+          title: Saying I dont know
+          url: vision/uncertainty
+        title: Classification
+      - output: web
+        subfolderitems:
+        - output: web,pdf
+          title: Scalar Regression
+          url: /regression/scalar
+        - output: web,pdf
+          title: Point Regression
+          url: /regression/point
+        title: Regression
+    output: web
+    title: Vision
+  output: web
+  title: Sidebar
