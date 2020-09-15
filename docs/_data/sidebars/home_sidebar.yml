@@ -170,7 +170,6 @@ entries:
     - output: web,pdf
       title: Core
       url: /vision.core
-      subfolders:
       - output: web
         subfolderitems:
         - output: web,pdf

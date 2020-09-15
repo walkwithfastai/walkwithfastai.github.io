@@ -75,14 +75,14 @@
     
     "Vision": {
         "Core": "/vision.core",
-        "": {
+        "empty1": {
             "Data": {
                 "Augmentation": "/vision.augment",
                 "Core": "/vision.data"
             }
         },
         "Learner": "/vision.learner",
-        "empty1": {
+        "empty2": {
             "Models": {
                 "XResnet": "/vision.models.xresnet",
                 "Unet": "/vision.models.unet"
