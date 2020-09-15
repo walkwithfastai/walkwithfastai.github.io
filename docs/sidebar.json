@@ -12,14 +12,18 @@
     "High to Low Level": "/api/high_to_low"
   },
   "Vision": {
-    "Classification" : {
-        "Single Label": "/vision/single_label",
-        "Multi-Label": "/vision/multi_label",
-        "Saying I don't know": "vision/uncertainty"
-      },
-    "Regression" : {
-      "Scalar Regression": "/regression/scalar",
-      "Point Regression": "/regression/point"
-      }
+    "": {
+        "Classification" : {
+            "Single Label": "/vision/single_label",
+            "Multi-Label": "/vision/multi_label",
+            "Saying I don't know": "vision/uncertainty"
+          }
+    },
+    "empty2": {
+        "Regression" : {
+          "Scalar Regression": "/regression/scalar",
+          "Point Regression": "/regression/point"
+          }
+    }
   }
 }

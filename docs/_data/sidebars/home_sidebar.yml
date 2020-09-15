@@ -36,27 +36,28 @@ entries:
     output: web
     title: fastai API
   - folderitems:
-    - output: web
       subfolders:
-      - output: web,pdf
-        title: Single Label
-        url: /vision/single_label
-      - output: web,pdf
-        title: Multi-Label
-        url: /vision/multi_label
-      - output: web,pdf
-        title: Saying I don't know
-        url: vision/uncertainty
-      title: Classification
-    - output: web
-      subfolders:
-      - output: web,pdf
-        title: Scalar Regression
-        url: /regression/scalar
-      - output: web,pdf
-        title: Point Regression
-        url: /regression/point
-      title: Regression
+      - output: web
+        subfolderitems:
+        - output: web,pdf
+          title: Single Label
+          url: /vision/single_label
+        - output: web,pdf
+          title: Multi-Label
+          url: /vision/multi_label
+        - output: web,pdf
+          title: Saying I don't know
+          url: vision/uncertainty
+        title: Classification
+      - output: web
+        subfolderitems:
+        - output: web,pdf
+          title: Scalar Regression
+          url: /regression/scalar
+        - output: web,pdf
+          title: Point Regression
+          url: /regression/point
+        title: Regression
     output: web
     title: Vision
   output: web
