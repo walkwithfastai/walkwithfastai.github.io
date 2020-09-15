@@ -168,26 +168,18 @@ entries:
     title: Core
   - folderitems:
     - output: web,pdf
-      title: Neptune
-      url: /callback.neptune
-    - output: web,pdf
-      title: TensorBoard
-      url: /callback.tensorboard
-    - output: web,pdf
-      title: Weights & Biases
-      url: /callback.wandb
-    output: web
-    title: Integrations
-  - folderitems:
-    - output: web,pdf
       title: Core
       url: /vision.core
-    - output: web,pdf
-      title: Augmentation
-      url: /vision.augment
-    - output: web,pdf
-      title: Data
-      url: /vision.data
+      subfolders:
+      - output: web
+        subfolderitems:
+        - output: web,pdf
+          title: Augmentation
+          url: /vision.augment
+        - output: web,pdf
+          title: Core
+          url: /vision.data
+        title: Data
     - output: web,pdf
       title: Learner
       url: /vision.learner
@@ -263,6 +255,18 @@ entries:
       url: /medical.text
     output: web
     title: Medical
+  - folderitems:
+    - output: web,pdf
+      title: Neptune
+      url: /callback.neptune
+    - output: web,pdf
+      title: TensorBoard
+      url: /callback.tensorboard
+    - output: web,pdf
+      title: Weights & Biases
+      url: /callback.wandb
+    output: web
+    title: Integrations
   - folderitems:
     - output: web,pdf
       title: Developers Guide
