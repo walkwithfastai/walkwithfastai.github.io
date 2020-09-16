@@ -128,18 +128,24 @@ entries:
           title: Multiple Outputs
           url: /tab.multi_regression
         title: Regression
-    - output: web,pdf
-      title: Mixed Outputs
-      url: /tab.mixed_outputs
-    - output: web,pdf
-      title: Time Series
-      url: /tab.time_series
-    - output: web,pdf
-      title: Hyperparameter Tuning
-      url: /tab.bayesian
-    - output: web,pdf
-      title: Ensembling with Other Models
-      url: /tab.ensemble
+      - output: web
+        subfolderitems:
+        - output: web,pdf
+          title: Mixed Outputs
+          url: /tab.mixed_outputs
+        - output: web,pdf
+          title: Time Series
+          url: /tab.time_series
+        title: Other Problem Domains
+      - output: web
+        subfolderitems:
+        - output: web,pdf
+          title: Hyperparameter Tuning
+          url: /tab.bayesian
+        - output: web,pdf
+          title: Ensembling with Other Libraries
+          url: /tab.ensemble
+        title: Useful Techniques
       - output: web
         subfolderitems:
         - output: web,pdf
@@ -183,9 +189,12 @@ entries:
           title: Multi-Label
           url: /text.multi_label
         title: Classification
-    - output: web,pdf
-      title: DNA Structures
-      url: /text.dna
+      - output: web
+        subfolderitems:
+        - output: web,pdf
+          title: DNA Structures
+          url: /text.dna
+        title: Regression
       - output: web
         subfolderitems:
         - output: web,pdf
