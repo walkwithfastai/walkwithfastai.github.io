@@ -55,7 +55,7 @@ defaults:
 sidebars:
 - home_sidebar
 
-description: "Documentation for the fastai library"
+description: "Taking fastai to the next level"
 # theme: jekyll-theme-cayman
 
 baseurl: /
