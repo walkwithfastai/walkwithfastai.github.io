@@ -7,44 +7,22 @@
   {% for folder in entry.folders %}
   {% if folder.output contains "web" %}
   <li>
-      <a href="#">{{ folder.title }}</a>
+      {{folderitem.title}}
+      {% if folderitem.subfolderitems[0]}
       <ul>
-          {% for folderitem in folder.folderitems %}
-          {% if folderitem.output contains "web" %}
-          {% if folderitem.external_url %}
-          <li><a href="{{folderitem.external_url}}" target="_blank">{{folderitem.title}}</a></li>
-          {% elsif pageurl == folderitem.url %}
-          <li class="active"><a href="{{folderitem.url | relative_url}}">{{folderitem.title}}</a></li>
-          {% elsif folderitem.type == "empty" %}
-          <li><a href="{{folderitem.url | relative_url}}">{{folderitem.title}}</a></li>
-
-          {% else %}
-          <li><a href="{{folderitem.url | relative_url}}">{{folderitem.title}}</a></li>
-          {% endif %}
-          {% for subfolders in folderitem.subfolders %}
-          {% if subfolders.output contains "web" %}
-          <li class="subfolders">
-              <a href="#">{{ subfolders.title }}</a>
+          {% for entry in folderitem.subfolderitems %}
+          <li><a href="{{folderitem.url | relative_url}}">{{entry.title}}</a>
+              {% if entry.subfolderitems[0] %}
               <ul>
-                  {% for subfolderitem in subfolders.subfolderitems %}
-                  {% if subfolderitem.output contains "web" %}
-                  {% if subfolderitem.external_url %}
-                  <li><a href="{{subfolderitem.external_url}}" target="_blank">{{subfolderitem.title}}</a></li>
-                  {% elsif pageurl == subfolderitem.url %}
-                  <li class="active"><a href="{{subfolderitem.url | relative_url}}">{{subfolderitem.title}}</a></li>
-                  {% else %}
-                  <li><a href="{{subfolderitem.url | relative_url}}">{{subfolderitem.title}}</a></li>
-                  {% endif %}
-                  {% endif %}
+                  {% for subentry in entry.subsubfolderitems %}
+                  <li><a href="{{subentry.url | relative_url}}">{{subentry.title}}</a></li>
                   {% endfor %}
               </ul>
+              {% endif %}
           </li>
-          {% endif %}
-          {% endfor %}
-          {% endif %}
           {% endfor %}
       </ul>
-   </li>
+    </li>
      {% endif %}
       {% endfor %}
       {% endfor %}
