@@ -1,6 +1,5 @@
 {
 	"Introduction": {
-		"What Is This Book": "/intro.about",
 		"How to Contribute a Chapter": "/intro.contribute",
 		"Using nbdev": "/intro.nbdev"
 	},
