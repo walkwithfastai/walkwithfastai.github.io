@@ -66,6 +66,7 @@
 	},
 
 	"Tabular": {
+        "TabularPandas": "/tab.pandas",
 		"":{
 			"Classification": {
 				"Binary": "/tab.binary",
@@ -103,7 +104,7 @@
 	},
 
 	"Text": {
-
+        "Introduction": "/text.intro",
 		"": {
 			"ULM-FiT": {
 				"Language Model": "/text.language",

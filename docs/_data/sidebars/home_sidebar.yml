@@ -103,6 +103,9 @@ entries:
     output: web
     title: Vision
   - folderitems:
+    - output: web,pdf
+      title: TabularPandas
+      url: /tab.pandas
       subfolders:
       - output: web
         subfolderitems:
@@ -155,6 +158,9 @@ entries:
     output: web
     title: Tabular
   - folderitems:
+    - output: web,pdf
+      title: Introduction
+      url: /text.intro
       subfolders:
       - output: web
         subfolderitems:
