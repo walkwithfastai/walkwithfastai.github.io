@@ -5,23 +5,19 @@
     },
     "Tutorials": {
         "Overview": "/tutorial",
-        "": {
-            "Beginners": {
-                "Vision Tutorial": "/tutorial.vision",
-                "Text Tutorial": "/tutorial.text",
-                "Tabular Tutorial": "/tutorial.tabular",
-                "Collab Tutorial": "/tutorial.collab"
-            }
+        "Beginners": {
+            "Vision Tutorial": "/tutorial.vision",
+            "Text Tutorial": "/tutorial.text",
+            "Tabular Tutorial": "/tutorial.tabular",
+            "Collab Tutorial": "/tutorial.collab"
         },
-        "empty1": {
-            "Intermediate": {
-                "DataBlock Tutorial": "/tutorial.datablock",
-                "Imagenette Tutorial": "/tutorial.imagenette",
-                "Medical Imaging Tutorial": "/tutorial.medical_imaging",
-                "Pets Tutorial": "/tutorial.pets",
-                "Transformers Tutorial": "/tutorial.transformers",
-                "Wikitext Tutorial": "/tutorial.wikitext"
-            }
+        "Intermediate": {
+            "DataBlock Tutorial": "/tutorial.datablock",
+            "Imagenette Tutorial": "/tutorial.imagenette",
+            "Medical Imaging Tutorial": "/tutorial.medical_imaging",
+            "Pets Tutorial": "/tutorial.pets",
+            "Transformers Tutorial": "/tutorial.transformers",
+            "Wikitext Tutorial": "/tutorial.wikitext"
         },
         "empty2": {
             "Advanced": {

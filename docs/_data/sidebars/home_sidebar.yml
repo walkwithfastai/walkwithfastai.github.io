@@ -18,43 +18,42 @@ entries:
     - output: web,pdf
       title: Overview
       url: /tutorial
+    - output: web
       subfolders:
-      - output: web
-        subfolderitems:
-        - output: web,pdf
-          title: Vision Tutorial
-          url: /tutorial.vision
-        - output: web,pdf
-          title: Text Tutorial
-          url: /tutorial.text
-        - output: web,pdf
-          title: Tabular Tutorial
-          url: /tutorial.tabular
-        - output: web,pdf
-          title: Collab Tutorial
-          url: /tutorial.collab
-        title: Beginners
-      - output: web
-        subfolderitems:
-        - output: web,pdf
-          title: DataBlock Tutorial
-          url: /tutorial.datablock
-        - output: web,pdf
-          title: Imagenette Tutorial
-          url: /tutorial.imagenette
-        - output: web,pdf
-          title: Medical Imaging Tutorial
-          url: /tutorial.medical_imaging
-        - output: web,pdf
-          title: Pets Tutorial
-          url: /tutorial.pets
-        - output: web,pdf
-          title: Transformers Tutorial
-          url: /tutorial.transformers
-        - output: web,pdf
-          title: Wikitext Tutorial
-          url: /tutorial.wikitext
-        title: Intermediate
+      - output: web,pdf
+        title: Vision Tutorial
+        url: /tutorial.vision
+      - output: web,pdf
+        title: Text Tutorial
+        url: /tutorial.text
+      - output: web,pdf
+        title: Tabular Tutorial
+        url: /tutorial.tabular
+      - output: web,pdf
+        title: Collab Tutorial
+        url: /tutorial.collab
+      title: Beginners
+    - output: web
+      subfolders:
+      - output: web,pdf
+        title: DataBlock Tutorial
+        url: /tutorial.datablock
+      - output: web,pdf
+        title: Imagenette Tutorial
+        url: /tutorial.imagenette
+      - output: web,pdf
+        title: Medical Imaging Tutorial
+        url: /tutorial.medical_imaging
+      - output: web,pdf
+        title: Pets Tutorial
+        url: /tutorial.pets
+      - output: web,pdf
+        title: Transformers Tutorial
+        url: /tutorial.transformers
+      - output: web,pdf
+        title: Wikitext Tutorial
+        url: /tutorial.wikitext
+      title: Intermediate
       - output: web
         subfolderitems:
         - output: web,pdf
