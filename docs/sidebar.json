@@ -19,19 +19,15 @@
             "Transformers Tutorial": "/tutorial.transformers",
             "Wikitext Tutorial": "/tutorial.wikitext"
         },
-        "empty2": {
-            "Advanced": {
-                "Albumentions Tutorial": "/tutorial.albumentions",
-                "Siamese Tutorial": "/tutorial.siamese"
-            }
+        "Advanced": {
+            "Albumentions Tutorial": "/tutorial.albumentions",
+            "Siamese Tutorial": "/tutorial.siamese"
         },
-        "empty3": {
-            "Migrating from Other Libraries": {
-                "Plain PyTorch": "/migrating_pytorch",
-                "Ignite": "/migrating_ignite",
-                "Lightning": "/migrating_lightning",
-                "Catalyst": "/migrating_catalyst"
-            }
+        "Migrating from Other Libraries": {
+            "Plain PyTorch": "/migrating_pytorch",
+            "Ignite": "/migrating_ignite",
+            "Lightning": "/migrating_lightning",
+            "Catalyst": "/migrating_catalyst"
         }
     },
     "Training": {

@@ -54,30 +54,30 @@ entries:
         title: Wikitext Tutorial
         url: /tutorial.wikitext
       title: Intermediate
-      - output: web
-        subfolderitems:
-        - output: web,pdf
-          title: Albumentions Tutorial
-          url: /tutorial.albumentions
-        - output: web,pdf
-          title: Siamese Tutorial
-          url: /tutorial.siamese
-        title: Advanced
-      - output: web
-        subfolderitems:
-        - output: web,pdf
-          title: Plain PyTorch
-          url: /migrating_pytorch
-        - output: web,pdf
-          title: Ignite
-          url: /migrating_ignite
-        - output: web,pdf
-          title: Lightning
-          url: /migrating_lightning
-        - output: web,pdf
-          title: Catalyst
-          url: /migrating_catalyst
-        title: Migrating from Other Libraries
+    - output: web
+      subfolders:
+      - output: web,pdf
+        title: Albumentions Tutorial
+        url: /tutorial.albumentions
+      - output: web,pdf
+        title: Siamese Tutorial
+        url: /tutorial.siamese
+      title: Advanced
+    - output: web
+      subfolders:
+      - output: web,pdf
+        title: Plain PyTorch
+        url: /migrating_pytorch
+      - output: web,pdf
+        title: Ignite
+        url: /migrating_ignite
+      - output: web,pdf
+        title: Lightning
+        url: /migrating_lightning
+      - output: web,pdf
+        title: Catalyst
+        url: /migrating_catalyst
+      title: Migrating from Other Libraries
     output: web
     title: Tutorials
   - folderitems:
