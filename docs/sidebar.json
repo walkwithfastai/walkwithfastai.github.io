@@ -1,120 +1,159 @@
 {
-    "Getting started": {
-        "Overview": "/",
-        "Quick Start": "/quick_start.html"
-    },
-    "Tutorials": {
-        "Overview": "/tutorial",
-        "Beginners": {
-            "Vision Tutorial": "/tutorial.vision",
-            "Text Tutorial": "/tutorial.text",
-            "Tabular Tutorial": "/tutorial.tabular",
-            "Collab Tutorial": "/tutorial.collab"
-        },
-        "Intermediate": {
-            "DataBlock Tutorial": "/tutorial.datablock",
-            "Imagenette Tutorial": "/tutorial.imagenette",
-            "Medical Imaging Tutorial": "/tutorial.medical_imaging",
-            "Pets Tutorial": "/tutorial.pets",
-            "Transformers Tutorial": "/tutorial.transformers",
-            "Wikitext Tutorial": "/tutorial.wikitext"
-        },
-        "Advanced": {
-            "Albumentions Tutorial": "/tutorial.albumentions",
-            "Siamese Tutorial": "/tutorial.siamese"
-        },
-        "Migrating from Other Libraries": {
-            "Plain PyTorch": "/migrating_pytorch",
-            "Ignite": "/migrating_ignite",
-            "Lightning": "/migrating_lightning",
-            "Catalyst": "/migrating_catalyst"
-        }
-    },
-    "Training": {
-        "Training Loop": "/learner",
-        "Optimizer": "/optimizer",
-        "Metrics": "/metrics",
-        "Interpretation": "/interpret",
-        "Distributed": "/distributed",
-        "": {
-            "Callbacks": {
-                "Core": "/callback.core",
-                "Hooks": "/callback.hook",
-                "Progress": "/callback.hook",
-                "Schedulers": "/callback.schedule",
-                "CutMix": "/callback.cutmix",
-                "Data": "/callback.data",
-                "Mixed Precision": "/callback.fp16",
-                "MixUp": "/callback.mixup",
-                "Predictions": "/callback.preds",
-                "RNN": "/callback.rnn",
-                "Tracker": "/callback.tracker",
-                "Training": "/callback.training"
-            }
-        }
-    },
-    "Data": {
-        "Blocks": "/data.block",
-        "Core": "/data.core",
-        "DataLoader": "/data.load",
-        "External": "/data.external",
-        "Transforms": "/data.transforms"
-    },
-    "Core": {
-        "PyTorch Core": "/torch_core",
-        "Layers": "/layers"
-    },
-    
-    "Vision": {
-        "Core": "/vision.core",
-        "Data": "/vision.data",
-        "Data Augmentation": "/vision.augment",
-        "Learner": "/vision.learner",
-        "": {
-            "Models": {
-                "XResnet": "/vision.models.xresnet",
-                "Unet": "/vision.models.unet"
-            }
-        },        
-        "GAN": "/vision.gan",
-        "Utilities": "/vision.utils",
-        "Widgets": "/vision.widgets"
-    },
-    "Text": {
-        "Core": "/text.core",
-        "Data": "/text.data",
-        "Learner": "/text.learner",
-        "": {
-            "Models": {
-                "Core": "/text.models.core",
-                "AWD LSTM": "/text.models.awdlstm",
-                "QRNN": "/text.models.qrnn"
-            }
-        }
-    },
-    "Tabular": {
-        "Core": "/tabular.core",
-        "Data": "/tabular.data",
-        "Learner": "/tabular.learner",
-        "Model": "/tabular.model",
-        "Collab": "/collab"
-    },
-    "Medical": {
-        "Imagery": "/medical.imaging",
-        "Text": "/medical.text"
-    },
-    
-    "Integrations": {
-        "Neptune": "/callback.neptune",
-        "TensorBoard": "/callback.tensorboard",
-        "Weights & Biases": "/callback.wandb"
-    },
-    "fastai Development": {
-        "Developers Guide": "/dev-setup",
-        "Abbreviation Guide": "/dev/abbr",
-        "Style Guide": "/dev/style",
-        "GPU Notes": "/dev/gpu",
-        "Git Notes": "/dev/git",
-        "Notes": "/dev/develop"
-    }
+	"Introduction": {
+		"What Is This Book": "/intro.about",
+		"How to Contribute a Chapter": "/intro.contribute",
+		"Using nbdev": "/intro.nbdev"
+	},
+
+	"The fastai API": {
+		"High-Level": "/api.high_level",
+		"Low-Level": "/api.low_level",
+		"Low to High": "/api.low_to_high",
+		"High to Low": "/api.high_to_low"
+	},
+
+	"Vision": {
+		"Introduction": "/vision.intro",
+
+		"": {
+			"Classification": {
+				"Single Label": "/vision.clas.single_label",
+				"Multi-Label": "/vision..clas.multi_label",
+				"Saying I Do Not Know": "/vision.clas.unkown_label"
+			}
+		},
+
+		"blank1": {
+			"Regression": {
+				"Scalar": "/vision.reg.scalar",
+				"Single Point": "/vision.reg.point",
+				"Multi-Point": "/vision.reg.multi_points"
+			}
+		},
+
+		"blank2": {
+			"Segmentation": {
+				"Binary": "/vision.seg.binary",
+				"CAMVID": "/vision.seg.camvid"
+			}
+		},
+
+		"blank3": {
+			"Object Detection": {
+				"RetinaNet": "/vision.od.retinanet"
+			}
+		},
+
+		"Style Transfer": "/vision.style_transfer",
+
+		"blank4": {
+			"Generative Adversarial Networks": {
+				"Super Resolution": "/vision.gan.super_res"
+			}
+		},
+
+		"blank5": {
+			"External Model Integrations": {
+				"EfficientNet": "/vision.external.eff",
+				"Segmentation": "/vision.external.seg"
+			}
+		},
+
+		"blank6": {
+			"Interpretation": {
+				"GradCAM": "/vision.interp.gradcam"
+			}
+		}
+	},
+
+	"Tabular": {
+		"":{
+			"Classification": {
+				"Binary": "/tab.binary",
+				"Multi-Label": "/tab.multi"
+			}
+		},
+
+		"blank1": {
+			"Regression": {
+				"Single Output": "/tab.regression",
+				"Multiple Outputs": "/tab.multi_regression"
+			}
+		},
+
+		"Mixed Outputs": "/tab.mixed_outputs",
+		"Time Series": "/tab.time_series",
+
+		"Hyperparameter Tuning": "/tab.bayesian",
+		"Ensembling with Other Models": "/tab.ensemble",
+
+		"blank2": {
+			"Interpretation": {
+				"ClassConfusion": "/tab.class_confusion",
+				"Permutation Importance": "/tab.permutation_importance",
+				"SHAP": "/tab.shap"
+			}
+		},
+
+		"blank3": {
+			"Other Models": {
+				"TabNet": "/tab.tabnet"
+			}
+		}
+
+	},
+
+	"Text": {
+
+		"": {
+			"ULM-FiT": {
+				"Language Model": "/text.language",
+				"Classification Model": "/text.classification"
+			}
+		},
+
+		"blank1": {
+			"Classification":{
+				"Single Label": "/text.single_label",
+				"Multi-Label": "/text.multi_label"
+			}
+		},
+		"DNA Structures": "/text.dna",
+		"blank2": {
+			"HuggingFace Integrations":{
+				"blurr": "/text.blurr",
+				"fasthugs": "/text.fasthugs",
+				"hugdatafast": "/text.hugdatafast"
+
+			}
+		},
+		"blank3": {
+			"Interpretation": {
+				"LIME": "/text.lime"
+			}
+		}
+	},
+
+	"Advanced Data Pipelines": {
+		"MixedDL": "/adp.mixed_dl"
+	},
+
+	"Production": {
+		"Tips and Tricks": "/prod.tips",
+		"fastinference": "/prod.fastinference"
+	},
+
+	"Internals": {
+		"DataLoader": "/internal.dataloader",
+		"fastcore": "/internal.fastcore"
+	},
+
+	"Training Loop": {
+		"One Cycle": "/internal.one_cycle",
+		"Flat-Cosine Annealing": "/internal.flat_cos"
+	},
+
+	"Development": {
+		"Getting Started": "/development"
+	}
 }

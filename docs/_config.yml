@@ -61,3 +61,5 @@ description: "Documentation for the fastai library"
 baseurl: /
 url: https://www.walkwithfastai.com
 twitter_username: muellerzr
+plugins:
+- jekyll-menus

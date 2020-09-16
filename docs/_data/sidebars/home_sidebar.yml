@@ -7,282 +7,270 @@ entries:
 - folders:
   - folderitems:
     - output: web,pdf
-      title: Overview
-      url: /
+      title: What Is This Book
+      url: /intro.about
     - output: web,pdf
-      title: Quick Start
-      url: /quick_start.html
+      title: How to Contribute a Chapter
+      url: /intro.contribute
+    - output: web,pdf
+      title: Using nbdev
+      url: /intro.nbdev
     output: web
-    title: Getting started
+    title: Introduction
   - folderitems:
     - output: web,pdf
-      title: Overview
-      url: /tutorial
-    - output: web
-      subfolders:
-      - output: web,pdf
-        title: Vision Tutorial
-        url: /tutorial.vision
-      - output: web,pdf
-        title: Text Tutorial
-        url: /tutorial.text
-      - output: web,pdf
-        title: Tabular Tutorial
-        url: /tutorial.tabular
-      - output: web,pdf
-        title: Collab Tutorial
-        url: /tutorial.collab
-      title: Beginners
-    - output: web
-      subfolders:
-      - output: web,pdf
-        title: DataBlock Tutorial
-        url: /tutorial.datablock
-      - output: web,pdf
-        title: Imagenette Tutorial
-        url: /tutorial.imagenette
-      - output: web,pdf
-        title: Medical Imaging Tutorial
-        url: /tutorial.medical_imaging
-      - output: web,pdf
-        title: Pets Tutorial
-        url: /tutorial.pets
-      - output: web,pdf
-        title: Transformers Tutorial
-        url: /tutorial.transformers
-      - output: web,pdf
-        title: Wikitext Tutorial
-        url: /tutorial.wikitext
-      title: Intermediate
-    - output: web
-      subfolders:
-      - output: web,pdf
-        title: Albumentions Tutorial
-        url: /tutorial.albumentions
-      - output: web,pdf
-        title: Siamese Tutorial
-        url: /tutorial.siamese
-      title: Advanced
-    - output: web
-      subfolders:
-      - output: web,pdf
-        title: Plain PyTorch
-        url: /migrating_pytorch
-      - output: web,pdf
-        title: Ignite
-        url: /migrating_ignite
-      - output: web,pdf
-        title: Lightning
-        url: /migrating_lightning
-      - output: web,pdf
-        title: Catalyst
-        url: /migrating_catalyst
-      title: Migrating from Other Libraries
+      title: High-Level
+      url: /api.high_level
+    - output: web,pdf
+      title: Low-Level
+      url: /api.low_level
+    - output: web,pdf
+      title: Low to High
+      url: /api.low_to_high
+    - output: web,pdf
+      title: High to Low
+      url: /api.high_to_low
     output: web
-    title: Tutorials
+    title: The fastai API
   - folderitems:
     - output: web,pdf
-      title: Training Loop
-      url: /learner
-    - output: web,pdf
-      title: Optimizer
-      url: /optimizer
-    - output: web,pdf
-      title: Metrics
-      url: /metrics
-    - output: web,pdf
-      title: Interpretation
-      url: /interpret
-    - output: web,pdf
-      title: Distributed
-      url: /distributed
+      title: Introduction
+      url: /vision.intro
       subfolders:
       - output: web
         subfolderitems:
         - output: web,pdf
-          title: Core
-          url: /callback.core
+          title: Single Label
+          url: /vision.clas.single_label
         - output: web,pdf
-          title: Hooks
-          url: /callback.hook
+          title: Multi-Label
+          url: /vision..clas.multi_label
         - output: web,pdf
-          title: Progress
-          url: /callback.hook
-        - output: web,pdf
-          title: Schedulers
-          url: /callback.schedule
-        - output: web,pdf
-          title: CutMix
-          url: /callback.cutmix
-        - output: web,pdf
-          title: Data
-          url: /callback.data
-        - output: web,pdf
-          title: Mixed Precision
-          url: /callback.fp16
-        - output: web,pdf
-          title: MixUp
-          url: /callback.mixup
-        - output: web,pdf
-          title: Predictions
-          url: /callback.preds
-        - output: web,pdf
-          title: RNN
-          url: /callback.rnn
-        - output: web,pdf
-          title: Tracker
-          url: /callback.tracker
-        - output: web,pdf
-          title: Training
-          url: /callback.training
-        title: Callbacks
-    output: web
-    title: Training
-  - folderitems:
-    - output: web,pdf
-      title: Blocks
-      url: /data.block
-    - output: web,pdf
-      title: Core
-      url: /data.core
-    - output: web,pdf
-      title: DataLoader
-      url: /data.load
-    - output: web,pdf
-      title: External
-      url: /data.external
-    - output: web,pdf
-      title: Transforms
-      url: /data.transforms
-    output: web
-    title: Data
-  - folderitems:
-    - output: web,pdf
-      title: PyTorch Core
-      url: /torch_core
-    - output: web,pdf
-      title: Layers
-      url: /layers
-    output: web
-    title: Core
-  - folderitems:
-    - output: web,pdf
-      title: Core
-      url: /vision.core
-    - output: web,pdf
-      title: Data
-      url: /vision.data
-    - output: web,pdf
-      title: Data Augmentation
-      url: /vision.augment
-    - output: web,pdf
-      title: Learner
-      url: /vision.learner
+          title: Saying I Do Not Know
+          url: /vision.clas.unkown_label
+        title: Classification
+    - output: web
       subfolders:
       - output: web
         subfolderitems:
         - output: web,pdf
-          title: XResnet
-          url: /vision.models.xresnet
+          title: Scalar
+          url: /vision.reg.scalar
         - output: web,pdf
-          title: Unet
-          url: /vision.models.unet
-        title: Models
+          title: Single Point
+          url: /vision.reg.point
+        - output: web,pdf
+          title: Multi-Point
+          url: /vision.reg.multi_points
+        title: Regression
+      title: blank1
+    - output: web
+      subfolders:
+      - output: web
+        subfolderitems:
+        - output: web,pdf
+          title: Binary
+          url: /vision.seg.binary
+        - output: web,pdf
+          title: CAMVID
+          url: /vision.seg.camvid
+        title: Segmentation
+      title: blank2
+    - output: web
+      subfolders:
+      - output: web
+        subfolderitems:
+        - output: web,pdf
+          title: RetinaNet
+          url: /vision.od.retinanet
+        title: Object Detection
+      title: blank3
     - output: web,pdf
-      title: GAN
-      url: /vision.gan
-    - output: web,pdf
-      title: Utilities
-      url: /vision.utils
-    - output: web,pdf
-      title: Widgets
-      url: /vision.widgets
+      title: Style Transfer
+      url: /vision.style_transfer
+    - output: web
+      subfolders:
+      - output: web
+        subfolderitems:
+        - output: web,pdf
+          title: Super Resolution
+          url: /vision.gan.super_res
+        title: Generative Adversarial Networks
+      title: blank4
+    - output: web
+      subfolders:
+      - output: web
+        subfolderitems:
+        - output: web,pdf
+          title: EfficientNet
+          url: /vision.external.eff
+        - output: web,pdf
+          title: Segmentation
+          url: /vision.external.seg
+        title: External Model Integrations
+      title: blank5
+    - output: web
+      subfolders:
+      - output: web
+        subfolderitems:
+        - output: web,pdf
+          title: GradCAM
+          url: /vision.interp.gradcam
+        title: Interpretation
+      title: blank6
     output: web
     title: Vision
   - folderitems:
-    - output: web,pdf
-      title: Core
-      url: /text.core
-    - output: web,pdf
-      title: Data
-      url: /text.data
-    - output: web,pdf
-      title: Learner
-      url: /text.learner
       subfolders:
       - output: web
         subfolderitems:
         - output: web,pdf
-          title: Core
-          url: /text.models.core
+          title: Binary
+          url: /tab.binary
         - output: web,pdf
-          title: AWD LSTM
-          url: /text.models.awdlstm
+          title: Multi-Label
+          url: /tab.multi
+        title: Classification
+    - output: web
+      subfolders:
+      - output: web
+        subfolderitems:
         - output: web,pdf
-          title: QRNN
-          url: /text.models.qrnn
-        title: Models
+          title: Single Output
+          url: /tab.regression
+        - output: web,pdf
+          title: Multiple Outputs
+          url: /tab.multi_regression
+        title: Regression
+      title: blank1
+    - output: web,pdf
+      title: Mixed Outputs
+      url: /tab.mixed_outputs
+    - output: web,pdf
+      title: Time Series
+      url: /tab.time_series
+    - output: web,pdf
+      title: Hyperparameter Tuning
+      url: /tab.bayesian
+    - output: web,pdf
+      title: Ensembling with Other Models
+      url: /tab.ensemble
+    - output: web
+      subfolders:
+      - output: web
+        subfolderitems:
+        - output: web,pdf
+          title: ClassConfusion
+          url: /tab.class_confusion
+        - output: web,pdf
+          title: Permutation Importance
+          url: /tab.permutation_importance
+        - output: web,pdf
+          title: SHAP
+          url: /tab.shap
+        title: Interpretation
+      title: blank2
+    - output: web
+      subfolders:
+      - output: web
+        subfolderitems:
+        - output: web,pdf
+          title: TabNet
+          url: /tab.tabnet
+        title: Other Models
+      title: blank3
+    output: web
+    title: Tabular
+  - folderitems:
+      subfolders:
+      - output: web
+        subfolderitems:
+        - output: web,pdf
+          title: Language Model
+          url: /text.language
+        - output: web,pdf
+          title: Classification Model
+          url: /text.classification
+        title: ULM-FiT
+    - output: web
+      subfolders:
+      - output: web
+        subfolderitems:
+        - output: web,pdf
+          title: Single Label
+          url: /text.single_label
+        - output: web,pdf
+          title: Multi-Label
+          url: /text.multi_label
+        title: Classification
+      title: blank1
+    - output: web,pdf
+      title: DNA Structures
+      url: /text.dna
+    - output: web
+      subfolders:
+      - output: web
+        subfolderitems:
+        - output: web,pdf
+          title: blurr
+          url: /text.blurr
+        - output: web,pdf
+          title: fasthugs
+          url: /text.fasthugs
+        - output: web,pdf
+          title: hugdatafast
+          url: /text.hugdatafast
+        title: HuggingFace Integrations
+      title: blank2
+    - output: web
+      subfolders:
+      - output: web
+        subfolderitems:
+        - output: web,pdf
+          title: LIME
+          url: /text.lime
+        title: Interpretation
+      title: blank3
     output: web
     title: Text
   - folderitems:
     - output: web,pdf
-      title: Core
-      url: /tabular.core
-    - output: web,pdf
-      title: Data
-      url: /tabular.data
-    - output: web,pdf
-      title: Learner
-      url: /tabular.learner
-    - output: web,pdf
-      title: Model
-      url: /tabular.model
-    - output: web,pdf
-      title: Collab
-      url: /collab
+      title: MixedDL
+      url: /adp.mixed_dl
     output: web
-    title: Tabular
+    title: Advanced Data Pipelines
   - folderitems:
     - output: web,pdf
-      title: Imagery
-      url: /medical.imaging
+      title: Tips and Tricks
+      url: /prod.tips
     - output: web,pdf
-      title: Text
-      url: /medical.text
+      title: fastinference
+      url: /prod.fastinference
     output: web
-    title: Medical
+    title: Production
   - folderitems:
     - output: web,pdf
-      title: Neptune
-      url: /callback.neptune
+      title: DataLoader
+      url: /internal.dataloader
     - output: web,pdf
-      title: TensorBoard
-      url: /callback.tensorboard
-    - output: web,pdf
-      title: Weights & Biases
-      url: /callback.wandb
+      title: fastcore
+      url: /internal.fastcore
     output: web
-    title: Integrations
+    title: Internals
   - folderitems:
     - output: web,pdf
-      title: Developers Guide
-      url: /dev-setup
+      title: One Cycle
+      url: /internal.one_cycle
     - output: web,pdf
-      title: Abbreviation Guide
-      url: /dev/abbr
-    - output: web,pdf
-      title: Style Guide
-      url: /dev/style
-    - output: web,pdf
-      title: GPU Notes
-      url: /dev/gpu
-    - output: web,pdf
-      title: Git Notes
-      url: /dev/git
-    - output: web,pdf
-      title: Notes
-      url: /dev/develop
+      title: Flat-Cosine Annealing
+      url: /internal.flat_cos
     output: web
-    title: fastai Development
+    title: Training Loop
+  - folderitems:
+    - output: web,pdf
+      title: Getting Started
+      url: /development
+    output: web
+    title: Development
   output: web
   title: Sidebar
