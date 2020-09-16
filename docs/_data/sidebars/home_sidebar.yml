@@ -76,9 +76,12 @@ entries:
           title: RetinaNet
           url: /vision.od.retinanet
         title: Object Detection
-    - output: web,pdf
-      title: Style Transfer
-      url: /vision.style_transfer
+      - output: web
+        subfolderitems:
+        - output: web,pdf
+          title: Feature Loss
+          url: /vision.feature_loss
+        title: Style Transfer
       - output: web
         subfolderitems:
         - output: web,pdf

@@ -43,22 +43,25 @@
 			}
 		},
 
-		"Style Transfer": "/vision.style_transfer",
-
-		"empty4": {
+        "empty4":{
+            "Style Transfer": {
+                "Feature Loss": "/vision.feature_loss"
+            }
+        },
+		"empty5": {
 			"Generative Adversarial Networks": {
 				"Super Resolution": "/vision.gan.super_res"
 			}
 		},
 
-		"empty5": {
+		"empty6": {
 			"External Model Integrations": {
 				"EfficientNet": "/vision.external.eff",
 				"Segmentation": "/vision.external.seg"
 			}
 		},
 
-		"empty6": {
+		"empty7": {
 			"Interpretation": {
 				"GradCAM": "/vision.interp.gradcam"
 			}
@@ -73,14 +76,12 @@
 				"Multi-Label": "/tab.multi"
 			}
 		},
-
 		"empty1": {
 			"Regression": {
 				"Single Output": "/tab.regression",
 				"Multiple Outputs": "/tab.multi_regression"
 			}
 		},
-
 		"Mixed Outputs": "/tab.mixed_outputs",
 		"Time Series": "/tab.time_series",
 
