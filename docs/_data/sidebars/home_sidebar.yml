@@ -49,8 +49,6 @@ entries:
           title: Saying I Do Not Know
           url: /vision.clas.unkown_label
         title: Classification
-    - output: web
-      subfolders:
       - output: web
         subfolderitems:
         - output: web,pdf
@@ -63,9 +61,6 @@ entries:
           title: Multi-Point
           url: /vision.reg.multi_points
         title: Regression
-      title: blank1
-    - output: web
-      subfolders:
       - output: web
         subfolderitems:
         - output: web,pdf
@@ -75,30 +70,21 @@ entries:
           title: CAMVID
           url: /vision.seg.camvid
         title: Segmentation
-      title: blank2
-    - output: web
-      subfolders:
       - output: web
         subfolderitems:
         - output: web,pdf
           title: RetinaNet
           url: /vision.od.retinanet
         title: Object Detection
-      title: blank3
     - output: web,pdf
       title: Style Transfer
       url: /vision.style_transfer
-    - output: web
-      subfolders:
       - output: web
         subfolderitems:
         - output: web,pdf
           title: Super Resolution
           url: /vision.gan.super_res
         title: Generative Adversarial Networks
-      title: blank4
-    - output: web
-      subfolders:
       - output: web
         subfolderitems:
         - output: web,pdf
@@ -108,22 +94,15 @@ entries:
           title: Segmentation
           url: /vision.external.seg
         title: External Model Integrations
-      title: blank5
-    - output: web
-      subfolders:
       - output: web
         subfolderitems:
         - output: web,pdf
           title: GradCAM
           url: /vision.interp.gradcam
         title: Interpretation
-      title: blank6
     output: web
     title: Vision
   - folderitems:
-    - output: web,pdf
-      title: TabularPandas
-      url: /tab.pandas
       subfolders:
       - output: web
         subfolderitems:
@@ -134,8 +113,6 @@ entries:
           title: Multi-Label
           url: /tab.multi
         title: Classification
-    - output: web
-      subfolders:
       - output: web
         subfolderitems:
         - output: web,pdf
@@ -145,7 +122,6 @@ entries:
           title: Multiple Outputs
           url: /tab.multi_regression
         title: Regression
-      title: blank1
     - output: web,pdf
       title: Mixed Outputs
       url: /tab.mixed_outputs
@@ -158,8 +134,6 @@ entries:
     - output: web,pdf
       title: Ensembling with Other Models
       url: /tab.ensemble
-    - output: web
-      subfolders:
       - output: web
         subfolderitems:
         - output: web,pdf
@@ -172,22 +146,15 @@ entries:
           title: SHAP
           url: /tab.shap
         title: Interpretation
-      title: blank2
-    - output: web
-      subfolders:
       - output: web
         subfolderitems:
         - output: web,pdf
           title: TabNet
           url: /tab.tabnet
         title: Other Models
-      title: blank3
     output: web
     title: Tabular
   - folderitems:
-    - output: web,pdf
-      title: Introduction
-      url: /text.intro
       subfolders:
       - output: web
         subfolderitems:
@@ -198,8 +165,6 @@ entries:
           title: Classification Model
           url: /text.classification
         title: ULM-FiT
-    - output: web
-      subfolders:
       - output: web
         subfolderitems:
         - output: web,pdf
@@ -209,12 +174,9 @@ entries:
           title: Multi-Label
           url: /text.multi_label
         title: Classification
-      title: blank1
     - output: web,pdf
       title: DNA Structures
       url: /text.dna
-    - output: web
-      subfolders:
       - output: web
         subfolderitems:
         - output: web,pdf
@@ -227,16 +189,12 @@ entries:
           title: hugdatafast
           url: /text.hugdatafast
         title: HuggingFace Integrations
-      title: blank2
-    - output: web
-      subfolders:
       - output: web
         subfolderitems:
         - output: web,pdf
           title: LIME
           url: /text.lime
         title: Interpretation
-      title: blank3
     output: web
     title: Text
   - folderitems:

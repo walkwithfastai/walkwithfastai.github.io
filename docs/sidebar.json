@@ -14,7 +14,6 @@
 
 	"Vision": {
 		"Introduction": "/vision.intro",
-
 		"": {
 			"Classification": {
 				"Single Label": "/vision.clas.single_label",
@@ -23,7 +22,7 @@
 			}
 		},
 
-		"blank1": {
+		"empty1": {
 			"Regression": {
 				"Scalar": "/vision.reg.scalar",
 				"Single Point": "/vision.reg.point",
@@ -31,14 +30,14 @@
 			}
 		},
 
-		"blank2": {
+		"empty2": {
 			"Segmentation": {
 				"Binary": "/vision.seg.binary",
 				"CAMVID": "/vision.seg.camvid"
 			}
 		},
 
-		"blank3": {
+		"empty3": {
 			"Object Detection": {
 				"RetinaNet": "/vision.od.retinanet"
 			}
@@ -46,20 +45,20 @@
 
 		"Style Transfer": "/vision.style_transfer",
 
-		"blank4": {
+		"empty4": {
 			"Generative Adversarial Networks": {
 				"Super Resolution": "/vision.gan.super_res"
 			}
 		},
 
-		"blank5": {
+		"empty5": {
 			"External Model Integrations": {
 				"EfficientNet": "/vision.external.eff",
 				"Segmentation": "/vision.external.seg"
 			}
 		},
 
-		"blank6": {
+		"empty6": {
 			"Interpretation": {
 				"GradCAM": "/vision.interp.gradcam"
 			}
@@ -67,7 +66,6 @@
 	},
 
 	"Tabular": {
-		"TabularPandas": "/tab.pandas",
 		"":{
 			"Classification": {
 				"Binary": "/tab.binary",
@@ -75,7 +73,7 @@
 			}
 		},
 
-		"blank1": {
+		"empty1": {
 			"Regression": {
 				"Single Output": "/tab.regression",
 				"Multiple Outputs": "/tab.multi_regression"
@@ -88,7 +86,7 @@
 		"Hyperparameter Tuning": "/tab.bayesian",
 		"Ensembling with Other Models": "/tab.ensemble",
 
-		"blank2": {
+		"empty2": {
 			"Interpretation": {
 				"ClassConfusion": "/tab.class_confusion",
 				"Permutation Importance": "/tab.permutation_importance",
@@ -96,7 +94,7 @@
 			}
 		},
 
-		"blank3": {
+		"empty3": {
 			"Other Models": {
 				"TabNet": "/tab.tabnet"
 			}
@@ -105,7 +103,6 @@
 	},
 
 	"Text": {
-		"Introduction": "/text.intro",
 
 		"": {
 			"ULM-FiT": {
@@ -114,14 +111,14 @@
 			}
 		},
 
-		"blank1": {
+		"empty1": {
 			"Classification":{
 				"Single Label": "/text.single_label",
 				"Multi-Label": "/text.multi_label"
 			}
 		},
 		"DNA Structures": "/text.dna",
-		"blank2": {
+		"empty2": {
 			"HuggingFace Integrations":{
 				"blurr": "/text.blurr",
 				"fasthugs": "/text.fasthugs",
@@ -129,7 +126,7 @@
 
 			}
 		},
-		"blank3": {
+		"empty3": {
 			"Interpretation": {
 				"LIME": "/text.lime"
 			}
