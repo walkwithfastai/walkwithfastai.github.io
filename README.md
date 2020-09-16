@@ -4,6 +4,8 @@
 
 ## What is this project?
 
+![](https://github.com/muellerzr/Practical-Deep-Learning-for-Coders-2.0/blob/c330c1cde4ff80537bc4e861d8a8456dd31835a8/walkwithfastai2.png?raw=true)
+
 
 Welcome to Walk with fastai! This project was started by me (Zachary Mueller) as a way to collect interesting techniques dotted throughout the [fast.ai forums](forums.fast.ai), my own course materials, and the fantastic work of others into one centralized place.
 
