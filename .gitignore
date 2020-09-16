@@ -4,6 +4,7 @@
 .gitconfig
 *.bak
 *.log
+.sidebar.json
 *~
 ~*
 _tmp*
