@@ -3,7 +3,7 @@
 		"How to Contribute a Chapter": "/intro.contribute"
 	},
     "Vision": {
-        "Introduction": "/vision.clas.single_label",
+        "Introduction": "/vision.intro",
         "": {
             "Classification": {
                 "Single Label (Beginner)": "/vision.clas.single_label"

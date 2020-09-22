@@ -14,7 +14,7 @@ entries:
   - folderitems:
     - output: web,pdf
       title: Introduction
-      url: /vision.clas.single_label
+      url: /vision.intro
       subfolders:
       - output: web
         subfolderitems:
