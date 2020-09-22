@@ -114,7 +114,7 @@ will be code snippets that you can then run in any environment.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>From here we would normally do something like <code>cnn_learner(dls, arch, metrics)</code>, however we need to do a few things special to work with Ross' framework.</p>
-<p><code>fastai</code> has a <code>create_body</code> function, whcih is called during <code>cnn_learner</code>, that will take a model architecuture and slice off the last Linear layer (resulting in a "body" that outputs unpooled features). This function looks like:</p>
+<p><code>fastai</code> has a <a href="https://docs.fast.ai/vision.learner#create_body"><code>create_body</code></a> function, whcih is called during <a href="https://docs.fast.ai/vision.learner#cnn_learner"><code>cnn_learner</code></a>, that will take a model architecuture and slice off the last Linear layer (resulting in a "body" that outputs unpooled features). This function looks like:</p>
 
 </div>
 </div>
@@ -219,7 +219,7 @@ will be code snippets that you can then run in any environment.</p>
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>From here we can calculate the number input features our head needs to have with <code>num_features_model</code> (we'll mutliply this by two since we have two pooling layers)</p>
+<p>From here we can calculate the number input features our head needs to have with <a href="https://docs.fast.ai/callback.hook#num_features_model"><code>num_features_model</code></a> (we'll mutliply this by two since we have two pooling layers)</p>
 
 </div>
 </div>
@@ -307,7 +307,7 @@ will be code snippets that you can then run in any environment.</p>
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>From here we would pass it onto <code>Learner</code>, specifying our <code>splitter</code> to be the <code>default_split</code></p>
+<p>From here we would pass it onto <a href="https://docs.fast.ai/learner#Learner"><code>Learner</code></a>, specifying our <code>splitter</code> to be the <a href="https://docs.fast.ai/vision.learner#default_split"><code>default_split</code></a></p>
 <blockquote><p><code>default_splitter</code> expects the body in <code>model[0]</code> and the head in <code>model[1]</code> to split our layer groups</p>
 </blockquote>
 
@@ -401,7 +401,7 @@ will be code snippets that you can then run in any environment.</p>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Turning-it-all-into-a-function">Turning it all into a function<a class="anchor-link" href="#Turning-it-all-into-a-function"> </a></h2><p>Let's make this a bit easier and create something like <code>cnn_learner</code>, but for <code>timm</code>! We'll call it a <a href="/vision.external.timm.html#timm_learner"><code>timm_learner</code></a>. First let's look at and compare what <code>cnn_learner</code> does internally:</p>
+<h2 id="Turning-it-all-into-a-function">Turning it all into a function<a class="anchor-link" href="#Turning-it-all-into-a-function"> </a></h2><p>Let's make this a bit easier and create something like <a href="https://docs.fast.ai/vision.learner#cnn_learner"><code>cnn_learner</code></a>, but for <code>timm</code>! We'll call it a <a href="/vision.external.timm.html#timm_learner"><code>timm_learner</code></a>. First let's look at and compare what <a href="https://docs.fast.ai/vision.learner#cnn_learner"><code>cnn_learner</code></a> does internally:</p>
 
 </div>
 </div>
@@ -443,10 +443,10 @@ will be code snippets that you can then run in any environment.</p>
 <li>Grab the number of expected outputs</li>
 <li>Potentially normalize</li>
 <li>Add a <code>y_range</code></li>
-<li>Create a <code>cnn_model</code> and <code>Learner</code></li>
+<li>Create a <code>cnn_model</code> and <a href="https://docs.fast.ai/learner#Learner"><code>Learner</code></a></li>
 <li>Freeze our model</li>
 </ol>
-<p>We're going to make a custom <a href="/vision.external.timm.html#create_timm_model"><code>create_timm_model</code></a> and <a href="/vision.external.timm.html#timm_learner"><code>timm_learner</code></a> function to do what we just did above. First, <a href="/vision.external.timm.html#create_timm_model"><code>create_timm_model</code></a> will model after <code>create_cnn_model</code>:</p>
+<p>We're going to make a custom <a href="/vision.external.timm.html#create_timm_model"><code>create_timm_model</code></a> and <a href="/vision.external.timm.html#timm_learner"><code>timm_learner</code></a> function to do what we just did above. First, <a href="/vision.external.timm.html#create_timm_model"><code>create_timm_model</code></a> will model after <a href="https://docs.fast.ai/vision.learner#create_cnn_model"><code>create_cnn_model</code></a>:</p>
 
 </div>
 </div>

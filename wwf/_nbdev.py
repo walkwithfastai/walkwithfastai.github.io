@@ -15,4 +15,6 @@ doc_url = "https://www.walkwithfastai.com/"
 
 git_url = "https://github.com/muellerzr/wwf/tree/master/"
 
-def custom_doc_links(name): return None
+def custom_doc_links(name):
+    from nbdev.showdoc import try_external_doc_link
+    return try_external_doc_link(name, ['fastcore', 'nbdev', 'fastai', 'timm'])

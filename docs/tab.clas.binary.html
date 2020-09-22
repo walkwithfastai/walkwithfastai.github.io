@@ -324,7 +324,7 @@ nb_path: "03_tab.clas.binary.ipynb"
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="TabularPandas">TabularPandas<a class="anchor-link" href="#TabularPandas"> </a></h2><p><code>fastai</code> has a new way of dealing with tabular data by utilizing a <code>TabularPandas</code> object. It expects some dataframe, some <code>procs</code>, <code>cat_names</code>, <code>cont_names</code>, <code>y_names</code>, <code>y_block</code>, and some <code>splits</code>. We'll walk through all of them</p>
+<h2 id="TabularPandas">TabularPandas<a class="anchor-link" href="#TabularPandas"> </a></h2><p><code>fastai</code> has a new way of dealing with tabular data by utilizing a <a href="https://docs.fast.ai/tabular.core#TabularPandas"><code>TabularPandas</code></a> object. It expects some dataframe, some <code>procs</code>, <code>cat_names</code>, <code>cont_names</code>, <code>y_names</code>, <code>y_block</code>, and some <code>splits</code>. We'll walk through all of them</p>
 <p>First we need to grab our categorical and continuous variables, along with how we want to process our data.</p>
 
 </div>
@@ -352,9 +352,9 @@ nb_path: "03_tab.clas.binary.ipynb"
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>When we pre-process tabular data with <code>fastai</code>, we do one or more of three transforms:</p>
 <ul>
-<li><code>Categorify</code></li>
-<li><code>FillMissing</code></li>
-<li><code>Normalize</code></li>
+<li><a href="https://docs.fast.ai/tabular.core#Categorify"><code>Categorify</code></a></li>
+<li><a href="https://docs.fast.ai/tabular.core#FillMissing"><code>FillMissing</code></a></li>
+<li><a href="https://docs.fast.ai/data.transforms#Normalize"><code>Normalize</code></a></li>
 </ul>
 
 </div>
@@ -362,7 +362,7 @@ nb_path: "03_tab.clas.binary.ipynb"
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Categorify">Categorify<a class="anchor-link" href="#Categorify"> </a></h3><p><code>Categorify</code> will transform columns that are in your <code>cat_names</code> into that type, along with label encoding our categorical data.</p>
+<h3 id="Categorify">Categorify<a class="anchor-link" href="#Categorify"> </a></h3><p><a href="https://docs.fast.ai/tabular.core#Categorify"><code>Categorify</code></a> will transform columns that are in your <code>cat_names</code> into that type, along with label encoding our categorical data.</p>
 <p>First we'll make an instance of it:</p>
 
 </div>
@@ -943,7 +943,7 @@ nb_path: "03_tab.clas.binary.ipynb"
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We'll recreate another <code>TabularPandas</code>:</p>
+<p>We'll recreate another <a href="https://docs.fast.ai/tabular.core#TabularPandas"><code>TabularPandas</code></a>:</p>
 
 </div>
 </div>
@@ -1192,7 +1192,7 @@ nb_path: "03_tab.clas.binary.ipynb"
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="The-DataLoaders">The DataLoaders<a class="anchor-link" href="#The-DataLoaders"> </a></h2><p>Now let's build our <code>TabularPandas</code> for classifying. We're also going to want to split our data and declare our <code>y_names</code> too:</p>
+<h2 id="The-DataLoaders">The DataLoaders<a class="anchor-link" href="#The-DataLoaders"> </a></h2><p>Now let's build our <a href="https://docs.fast.ai/tabular.core#TabularPandas"><code>TabularPandas</code></a> for classifying. We're also going to want to split our data and declare our <code>y_names</code> too:</p>
 
 </div>
 </div>
@@ -1234,7 +1234,7 @@ nb_path: "03_tab.clas.binary.ipynb"
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>What is <code>range_of</code>?</p>
+<p>What is <a href="https://fastcore.fast.ai/utils#range_of"><code>range_of</code></a>?</p>
 
 </div>
 </div>
@@ -1275,7 +1275,7 @@ nb_path: "03_tab.clas.binary.ipynb"
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>It's a list of total index's in our <code>DataFrame</code></p>
-<p>We'll use all our <code>cat</code> and <code>cont</code> names, the <code>procs</code>, declare a <code>y_name</code>, and finally specify a single-label classification problem with <code>CategoryBlock</code></p>
+<p>We'll use all our <code>cat</code> and <code>cont</code> names, the <code>procs</code>, declare a <code>y_name</code>, and finally specify a single-label classification problem with <a href="https://docs.fast.ai/data.block#CategoryBlock"><code>CategoryBlock</code></a></p>
 
 </div>
 </div>
@@ -1303,7 +1303,7 @@ nb_path: "03_tab.clas.binary.ipynb"
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Now that we have everything declared, let's build our <code>TabularPandas</code>:</p>
+<p>Now that we have everything declared, let's build our <a href="https://docs.fast.ai/tabular.core#TabularPandas"><code>TabularPandas</code></a>:</p>
 
 </div>
 </div>
@@ -1328,7 +1328,7 @@ nb_path: "03_tab.clas.binary.ipynb"
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>And now we can build the <code>DataLoaders</code>. We can do this one of two ways, first just calling <code>to.dataloaders()</code> on our data:</p>
+<p>And now we can build the <a href="https://docs.fast.ai/data.core#DataLoaders"><code>DataLoaders</code></a>. We can do this one of two ways, first just calling <code>to.dataloaders()</code> on our data:</p>
 
 </div>
 </div>
@@ -1352,7 +1352,7 @@ nb_path: "03_tab.clas.binary.ipynb"
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Or we can create the <code>DataLoaders</code> ourselves (a train and valid). One great reason to do this this way is we can pass in different batch sizes into each <code>TabDataLoader</code>, along with changing options like <code>shuffle</code> and <code>drop_last</code></p>
+<p>Or we can create the <a href="https://docs.fast.ai/data.core#DataLoaders"><code>DataLoaders</code></a> ourselves (a train and valid). One great reason to do this this way is we can pass in different batch sizes into each <a href="https://docs.fast.ai/tabular.core#TabDataLoader"><code>TabDataLoader</code></a>, along with changing options like <code>shuffle</code> and <code>drop_last</code></p>
 <p>So how do we use it? Our train and validation data live in to.train and to.valid right now, so we specify that along with our options. When you make a training DataLoader, you want <code>shuffle</code> to be <code>True</code> and <code>drop_last</code> to be <code>True</code> (so we drop the last incomplete batch)</p>
 
 </div>
@@ -1378,7 +1378,7 @@ nb_path: "03_tab.clas.binary.ipynb"
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Now we can make some <code>DataLoaders</code>:</p>
+<p>Now we can make some <a href="https://docs.fast.ai/data.core#DataLoaders"><code>DataLoaders</code></a>:</p>
 
 </div>
 </div>
@@ -1600,7 +1600,7 @@ nb_path: "03_tab.clas.binary.ipynb"
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p>Why can we do the <code>.dataloaders()</code>? Because <code>TabularPandas</code> itself is actually a set of <code>TabDataLoaders</code>! See below for a comparison test:</p>
+<blockquote><p>Why can we do the <code>.dataloaders()</code>? Because <a href="https://docs.fast.ai/tabular.core#TabularPandas"><code>TabularPandas</code></a> itself is actually a set of <code>TabDataLoaders</code>! See below for a comparison test:</p>
 </blockquote>
 
 </div>
@@ -1641,7 +1641,7 @@ nb_path: "03_tab.clas.binary.ipynb"
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Tabular-Learner-and-Training-a-Model">Tabular Learner and Training a Model<a class="anchor-link" href="#Tabular-Learner-and-Training-a-Model"> </a></h2><p>Now we can build our <code>Learner</code>! But what's special about a tabular neural network?</p>
+<h2 id="Tabular-Learner-and-Training-a-Model">Tabular Learner and Training a Model<a class="anchor-link" href="#Tabular-Learner-and-Training-a-Model"> </a></h2><p>Now we can build our <a href="https://docs.fast.ai/learner#Learner"><code>Learner</code></a>! But what's special about a tabular neural network?</p>
 <h3 id="Categorical-Variables">Categorical Variables<a class="anchor-link" href="#Categorical-Variables"> </a></h3><p>When dealing with our categorical data, we create what is called an <strong>embedding matrix</strong>. This allows for a higher dimentionality for relationships between the different categorical cardinalities. Finding the best size ratio was done through experiments by Jeremy on the Rossmann dataset</p>
 
 </div>
@@ -1832,7 +1832,7 @@ $$min(600, (1.6 * {var.nunique)}^{0.56})$$
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>And now we have all the pieces we need to build a <code>TabularModel</code>!</p>
+<p>And now we have all the pieces we need to build a <a href="https://docs.fast.ai/tabular.model#TabularModel"><code>TabularModel</code></a>!</p>
 
 </div>
 </div>
@@ -2004,7 +2004,7 @@ $$min(600, (1.6 * {var.nunique)}^{0.56})$$
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="tabular_learner">tabular_learner<a class="anchor-link" href="#tabular_learner"> </a></h3><p>Now that we know the background, let's build our model a little bit faster and generate a <code>Learner</code> too:</p>
+<h3 id="tabular_learner">tabular_learner<a class="anchor-link" href="#tabular_learner"> </a></h3><p>Now that we know the background, let's build our model a little bit faster and generate a <a href="https://docs.fast.ai/learner#Learner"><code>Learner</code></a> too:</p>
 
 </div>
 </div>

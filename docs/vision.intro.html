@@ -70,7 +70,7 @@ will be code snippets that you can then run in any environment.</p>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Opening-Images">Opening Images<a class="anchor-link" href="#Opening-Images"> </a></h3><p><code>fastai</code> utilizes the <code>Pillow</code> library to open images and apply transforms. To open up any image using <code>Pillow</code> inside the <code>fastai</code> library, we have <code>PILImage.create</code>:</p>
+<h3 id="Opening-Images">Opening Images<a class="anchor-link" href="#Opening-Images"> </a></h3><p><code>fastai</code> utilizes the <code>Pillow</code> library to open images and apply transforms. To open up any image using <code>Pillow</code> inside the <code>fastai</code> library, we have <a href="https://docs.fast.ai/vision.core#PILImage.create"><code>PILImage.create</code></a>:</p>
 
 </div>
 </div>
@@ -235,10 +235,10 @@ will be code snippets that you can then run in any environment.</p>
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><code>PILImage</code> can accept a varity of inputs to cover the most common types you will see in the wild:</p>
+<p><a href="https://docs.fast.ai/vision.core#PILImage"><code>PILImage</code></a> can accept a varity of inputs to cover the most common types you will see in the wild:</p>
 <ul>
-<li><code>TensorImage</code> (<code>fastai</code> specific)</li>
-<li><code>TensorMask</code> (<code>fastai</code> specific)</li>
+<li><a href="https://docs.fast.ai/torch_core#TensorImage"><code>TensorImage</code></a> (<code>fastai</code> specific)</li>
+<li><a href="https://docs.fast.ai/torch_core#TensorMask"><code>TensorMask</code></a> (<code>fastai</code> specific)</li>
 <li>A <code>Tensor</code></li>
 <li>A <code>ndarray</code></li>
 <li>Bytes (note that it will call <code>io.BytesIO</code> to open it)</li>
@@ -250,7 +250,7 @@ will be code snippets that you can then run in any environment.</p>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We can also have black and white images, which has it's own <code>PIL</code> denomer, <code>PILImageBW</code>. We'll see an example with <code>MNIST</code> below:</p>
+<p>We can also have black and white images, which has it's own <code>PIL</code> denomer, <a href="https://docs.fast.ai/vision.core#PILImageBW"><code>PILImageBW</code></a>. We'll see an example with <code>MNIST</code> below:</p>
 
 </div>
 </div>
@@ -344,7 +344,7 @@ will be code snippets that you can then run in any environment.</p>
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Opening-Masks">Opening Masks<a class="anchor-link" href="#Opening-Masks"> </a></h3><p>Along with <code>PILImage</code> and <code>PILImageBW</code> we have <code>PILMask</code> designed to open masks. Let's see a quick example:</p>
+<h3 id="Opening-Masks">Opening Masks<a class="anchor-link" href="#Opening-Masks"> </a></h3><p>Along with <a href="https://docs.fast.ai/vision.core#PILImage"><code>PILImage</code></a> and <a href="https://docs.fast.ai/vision.core#PILImageBW"><code>PILImageBW</code></a> we have <a href="https://docs.fast.ai/vision.core#PILMask"><code>PILMask</code></a> designed to open masks. Let's see a quick example:</p>
 
 </div>
 </div>
@@ -431,19 +431,19 @@ will be code snippets that you can then run in any environment.</p>
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Each of these functions inherit from <code>PILBase</code>, which is a simple class that expands the usage of <code>Image.Image</code>.</p>
+<p>Each of these functions inherit from <a href="https://docs.fast.ai/vision.core#PILBase"><code>PILBase</code></a>, which is a simple class that expands the usage of <code>Image.Image</code>.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Pairing-it-with-the-DataBlock">Pairing it with the <code>DataBlock</code><a class="anchor-link" href="#Pairing-it-with-the-DataBlock"> </a></h2><p>When using vision in the DataBlock API, two blocks are generally used:</p>
+<h2 id="Pairing-it-with-the-DataBlock">Pairing it with the <a href="https://docs.fast.ai/data.block#DataBlock"><code>DataBlock</code></a><a class="anchor-link" href="#Pairing-it-with-the-DataBlock"> </a></h2><p>When using vision in the DataBlock API, two blocks are generally used:</p>
 <ul>
-<li><code>ImageBlock</code></li>
-<li><code>MaskBlock</code></li>
+<li><a href="https://docs.fast.ai/vision.data#ImageBlock"><code>ImageBlock</code></a></li>
+<li><a href="https://docs.fast.ai/vision.data#MaskBlock"><code>MaskBlock</code></a></li>
 </ul>
-<p>When specifying if we want a black and white image, we can pass in a <code>cls</code> to <code>ImageBlock</code> like so:</p>
+<p>When specifying if we want a black and white image, we can pass in a <code>cls</code> to <a href="https://docs.fast.ai/vision.data#ImageBlock"><code>ImageBlock</code></a> like so:</p>
 <ul>
 <li><code>ImageBlock(cls=PILImageBW)</code></li>
 </ul>
@@ -455,10 +455,10 @@ will be code snippets that you can then run in any environment.</p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>There are more tasks than simply just Semantic Segmentation, so the entire list of vision-related blocks are below:</p>
 <ul>
-<li><code>ImageBlock</code></li>
-<li><code>MaskBlock</code></li>
-<li><code>BBoxBlock</code> &amp; <code>BBoxLblBlock</code></li>
-<li><code>PointBlock</code></li>
+<li><a href="https://docs.fast.ai/vision.data#ImageBlock"><code>ImageBlock</code></a></li>
+<li><a href="https://docs.fast.ai/vision.data#MaskBlock"><code>MaskBlock</code></a></li>
+<li><a href="https://docs.fast.ai/vision.data#BBoxBlock"><code>BBoxBlock</code></a> &amp; <a href="https://docs.fast.ai/vision.data#BBoxLblBlock"><code>BBoxLblBlock</code></a></li>
+<li><a href="https://docs.fast.ai/vision.data#PointBlock"><code>PointBlock</code></a></li>
 </ul>
 
 </div>
@@ -466,10 +466,10 @@ will be code snippets that you can then run in any environment.</p>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Special-Learners">Special Learners<a class="anchor-link" href="#Special-Learners"> </a></h2><p>Each subsection of the library tends to have its own special <code>Learner</code> wrappers to apply a bit of magic. For Computer Vision, this comes in the form of <code>cnn_learner</code> and <code>unet_learner</code>.</p>
-<p>A quick high-level explaination of <code>cnn_learner</code> is we can pass in a callable backbone model, <code>fastai</code> will freeze the weights, and apply their own custom head on top with two pooling layers. You will see this referenced the most in the vision section of this website</p>
-<p><code>unet_learner</code> is a method for generating a <code>Learner</code> paired with the Dynamic Unet architecture and is designed specifically for segmentation (though this model <em>can</em> be used for other tasks)</p>
-<p><code>GANLearner</code>, as it would suggest, is a <code>Learner</code> that should be used when working with <code>GANs</code>. It's a different API altogether compared to the previous two, given that GANs operate on a generator/discriminator dynamic.</p>
+<h2 id="Special-Learners">Special Learners<a class="anchor-link" href="#Special-Learners"> </a></h2><p>Each subsection of the library tends to have its own special <a href="https://docs.fast.ai/learner#Learner"><code>Learner</code></a> wrappers to apply a bit of magic. For Computer Vision, this comes in the form of <a href="https://docs.fast.ai/vision.learner#cnn_learner"><code>cnn_learner</code></a> and <a href="https://docs.fast.ai/vision.learner#unet_learner"><code>unet_learner</code></a>.</p>
+<p>A quick high-level explaination of <a href="https://docs.fast.ai/vision.learner#cnn_learner"><code>cnn_learner</code></a> is we can pass in a callable backbone model, <code>fastai</code> will freeze the weights, and apply their own custom head on top with two pooling layers. You will see this referenced the most in the vision section of this website</p>
+<p><a href="https://docs.fast.ai/vision.learner#unet_learner"><code>unet_learner</code></a> is a method for generating a <a href="https://docs.fast.ai/learner#Learner"><code>Learner</code></a> paired with the Dynamic Unet architecture and is designed specifically for segmentation (though this model <em>can</em> be used for other tasks)</p>
+<p><a href="https://docs.fast.ai/vision.gan#GANLearner"><code>GANLearner</code></a>, as it would suggest, is a <a href="https://docs.fast.ai/learner#Learner"><code>Learner</code></a> that should be used when working with <code>GANs</code>. It's a different API altogether compared to the previous two, given that GANs operate on a generator/discriminator dynamic.</p>
 
 </div>
 </div>
@@ -501,7 +501,7 @@ will be code snippets that you can then run in any environment.</p>
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><code>aug_transforms</code> will generate a few random transforms that are applied efficiently on your batch.</p>
+<p><a href="https://docs.fast.ai/vision.augment#aug_transforms"><code>aug_transforms</code></a> will generate a few random transforms that are applied efficiently on your batch.</p>
 
 </div>
 </div>
