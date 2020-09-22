@@ -12,10 +12,12 @@ def get_version(lib:str):
 from IPython.display import Markdown
 def state_versions(libs:list=[]):
     "State all the versions currently installed from `libs` in Markdown"
-    cell = ''
-    cell += '---\n'
-    cell += 'This article is also a Jupyter Notebook available to be run from the top down. '
-    cell += 'There will be code snippets that you can then run in any environment. '
+    cell = f"""
+---
+This article is also a Jupyter Notebook available to be run from the top down. There
+will be code snippets that you can then run in any environment.
+
+"""
     cell += 'Below are the versions of '
     for i, lib in enumerate(libs):
         if len(libs) == 1: cell += f'`{str(lib)}`'
