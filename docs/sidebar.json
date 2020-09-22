@@ -8,6 +8,11 @@
             "Classification": {
                 "Single Label (Beginner)": "/vision.clas.single_label"
             }
+        },
+        "empty1": {
+            "External Model Integrations": {
+                "timm": "/vision.external.timm"
+            }
         }
     },
     "Tabular": {
@@ -15,11 +20,6 @@
         "": {
             "Classification": {
                 "Binary (Beginner)": "/tab.clas.binary"
-            }
-        },
-        "empty1": {
-            "External Model Integrations": {
-                "timm": "/vision.external.timm"
             }
         }
     }
