@@ -7,9 +7,9 @@ from fastai.vision.all import *
 
 # Cell
 from timm import create_model
+from fastai.vision.learner import _update_first_layer
 
 # Cell
-from fastai.vision.learner import _update_first_layer
 def create_timm_body(arch:str, pretrained=True, cut=None, n_in=3):
     "Creates a body from any model in the `timm` library."
     model = create_model(arch, pretrained=pretrained, num_classes=0, global_pool='')
@@ -36,6 +36,8 @@ def create_timm_model(arch:str, n_out, cut=None, pretrained=True, n_in=3, init=n
 
 # Cell
 from fastai.vision.learner import _add_norm
+
+# Cell
 def timm_learner(dls, arch:str, loss_func=None, pretrained=True, cut=None, splitter=None,
                 y_range=None, config=None, n_out=None, normalize=True, **kwargs):
     "Build a convnet style learner from `dls` and `arch` using the `timm` library"
