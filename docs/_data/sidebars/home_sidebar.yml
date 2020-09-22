@@ -11,5 +11,31 @@ entries:
       url: /intro.contribute
     output: web
     title: Introduction
+  - folderitems:
+    - output: web,pdf
+      title: Introduction
+      url: /vision.clas.single_label
+      subfolders:
+      - output: web
+        subfolderitems:
+        - output: web,pdf
+          title: Single Label (Beginner)
+          url: /vision.clas.single_label
+        title: Classification
+    output: web
+    title: Vision
+  - folderitems:
+    - output: web,pdf
+      title: Introduction
+      url: /tab.clas.binary
+      subfolders:
+      - output: web
+        subfolderitems:
+        - output: web,pdf
+          title: Binary (Beginner)
+          url: /tab.clas.binary
+        title: Classification
+    output: web
+    title: Tabular
   output: web
   title: Sidebar

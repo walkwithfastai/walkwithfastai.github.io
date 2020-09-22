@@ -1,5 +1,21 @@
 {
 	"Introduction": {
 		"How to Contribute a Chapter": "/intro.contribute"
-	}
+	},
+    "Vision": {
+        "Introduction": "/vision.clas.single_label",
+        "": {
+            "Classification": {
+                "Single Label (Beginner)": "/vision.clas.single_label"
+            }
+        }
+    },
+    "Tabular": {
+        "Introduction": "/tab.clas.binary",
+        "": {
+            "Classification": {
+                "Binary (Beginner)": "/tab.clas.binary"
+            }
+        }
+    }
 }
