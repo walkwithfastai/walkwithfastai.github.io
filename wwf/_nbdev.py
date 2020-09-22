@@ -3,9 +3,13 @@
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
 index = {"get_version": "00_utils.ipynb",
-         "state_versions": "00_utils.ipynb"}
+         "state_versions": "00_utils.ipynb",
+         "create_timm_body": "02_vision.external.timm.ipynb",
+         "create_timm_model": "02_vision.external.timm.ipynb",
+         "timm_learner": "02_vision.external.timm.ipynb"}
 
-modules = ["utils.py"]
+modules = ["utils.py",
+           "vision/timm.py"]
 
 doc_url = "https://www.walkwithfastai.com/"
 

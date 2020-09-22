@@ -35,6 +35,12 @@ entries:
           title: Binary (Beginner)
           url: /tab.clas.binary
         title: Classification
+      - output: web
+        subfolderitems:
+        - output: web,pdf
+          title: timm
+          url: /vision.external.timm
+        title: External Model Integrations
     output: web
     title: Tabular
   output: web
