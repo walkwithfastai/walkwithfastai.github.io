@@ -625,6 +625,215 @@ will be code snippets that you can then run in any environment.</p>
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Model-Lookup">Model Lookup<a class="anchor-link" href="#Model-Lookup"> </a></h2><p>To query various models to see what is available, you should directly use the <code>timm</code> library.</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">timm</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Listing-all-models-available">Listing all models available<a class="anchor-link" href="#Listing-all-models-available"> </a></h3><p>One option is to list every model possible:</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">timm</span><span class="o">.</span><span class="n">list_models</span><span class="p">()[:</span><span class="mi">10</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;adv_inception_v3&#39;,
+ &#39;cspdarknet53&#39;,
+ &#39;cspdarknet53_iabn&#39;,
+ &#39;cspresnet50&#39;,
+ &#39;cspresnet50d&#39;,
+ &#39;cspresnet50w&#39;,
+ &#39;cspresnext50&#39;,
+ &#39;cspresnext50_iabn&#39;,
+ &#39;darknet53&#39;,
+ &#39;densenet121&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Searching-for-models">Searching for models<a class="anchor-link" href="#Searching-for-models"> </a></h3><p>You can also query the names of what is available as well, denoted as below:</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">timm</span><span class="o">.</span><span class="n">list_models</span><span class="p">(</span><span class="s1">&#39;*efficientnet*&#39;</span><span class="p">)[:</span><span class="mi">10</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;efficientnet_b0&#39;,
+ &#39;efficientnet_b1&#39;,
+ &#39;efficientnet_b1_pruned&#39;,
+ &#39;efficientnet_b2&#39;,
+ &#39;efficientnet_b2_pruned&#39;,
+ &#39;efficientnet_b2a&#39;,
+ &#39;efficientnet_b3&#39;,
+ &#39;efficientnet_b3_pruned&#39;,
+ &#39;efficientnet_b3a&#39;,
+ &#39;efficientnet_b4&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">timm</span><span class="o">.</span><span class="n">list_models</span><span class="p">(</span><span class="s1">&#39;*b3a&#39;</span><span class="p">)[:</span><span class="mi">10</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;efficientnet_b3a&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">timm</span><span class="o">.</span><span class="n">list_models</span><span class="p">(</span><span class="s1">&#39;resne*t*&#39;</span><span class="p">,</span> <span class="n">pretrained</span><span class="o">=</span><span class="kc">True</span><span class="p">)[:</span><span class="mi">10</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;resnest14d&#39;,
+ &#39;resnest26d&#39;,
+ &#39;resnest50d&#39;,
+ &#39;resnest50d_1s4x24d&#39;,
+ &#39;resnest50d_4s2x40d&#39;,
+ &#39;resnest101e&#39;,
+ &#39;resnest200e&#39;,
+ &#39;resnest269e&#39;,
+ &#39;resnet18&#39;,
+ &#39;resnet26&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Some-Warnings">Some Warnings<a class="anchor-link" href="#Some-Warnings"> </a></h2><ul>
+<li><p>Watch for anything with a <code>tf_</code> prefix. This means the original weights were ported from Google, so it uses manual padding to match TensorFlow's "same" padding, which adds GPU overhead and a general slowdown. If possible try to use the non-TF versions of models</p>
+</li>
+<li><p>HRNet is a bit of a problem-child, so it is the only one not straight-forward to use</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
 </div>
  
 
