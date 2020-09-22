@@ -219,7 +219,7 @@ will be code snippets that you can then run in any environment.</p>
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>From here we can calculate the number input features our head needs to have with <a href="https://docs.fast.ai/callback.hook#num_features_model"><code>num_features_model</code></a> (we'll mutliply this by two since we have two pooling layers)</p>
+<p>From here we can calculate the number input features our head needs to have with <a href="https://docs.fast.ai/callback.hook#num_features_model"><code>num_features_model</code></a>.  We'll mutliply this by two since we have two pooling layers, <a href="https://docs.fast.ai/layers#AdaptiveConcatPool2d"><code>AdaptiveConcatPool2d</code></a> and <code>nn.AdaptiveAvgPool2d</code></p>
 
 </div>
 </div>
