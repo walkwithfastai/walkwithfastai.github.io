@@ -94,7 +94,7 @@ will be code snippets that you can then run in any environment.</p>
 <span class="n">pat</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;/([^/]+)_\d+.*&#39;</span>
 <span class="n">item_tfms</span> <span class="o">=</span> <span class="n">RandomResizedCrop</span><span class="p">(</span><span class="mi">460</span><span class="p">,</span> <span class="n">min_scale</span><span class="o">=</span><span class="mf">0.75</span><span class="p">,</span> <span class="n">ratio</span><span class="o">=</span><span class="p">(</span><span class="mf">1.</span><span class="p">,</span><span class="mf">1.</span><span class="p">))</span>
 <span class="n">batch_tfms</span> <span class="o">=</span> <span class="p">[</span><span class="o">*</span><span class="n">aug_transforms</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">224</span><span class="p">,</span> <span class="n">max_warp</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span> <span class="n">Normalize</span><span class="o">.</span><span class="n">from_stats</span><span class="p">(</span><span class="o">*</span><span class="n">imagenet_stats</span><span class="p">)]</span>
-<span class="n">bs</span><span class="o">=</span><span class="mi">64</span>
+<span class="n">bs</span><span class="o">=</span><span class="mi">16</span>
 <span class="n">pets</span> <span class="o">=</span> <span class="n">DataBlock</span><span class="p">(</span><span class="n">blocks</span><span class="o">=</span><span class="p">(</span><span class="n">ImageBlock</span><span class="p">,</span> <span class="n">CategoryBlock</span><span class="p">),</span>
                  <span class="n">get_items</span><span class="o">=</span><span class="n">get_image_files</span><span class="p">,</span>
                  <span class="n">splitter</span><span class="o">=</span><span class="n">RandomSplitter</span><span class="p">(</span><span class="mf">0.2</span><span class="p">),</span>
@@ -346,10 +346,10 @@ will be code snippets that you can then run in any environment.</p>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">learn</span><span class="o">.</span><span class="n">freeze</span><span class="p">()</span>
-<span class="n">model_parameters</span> <span class="o">=</span> <span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">p</span><span class="p">:</span> <span class="n">p</span><span class="o">.</span><span class="n">requires_grad</span><span class="p">,</span> <span class="n">learn</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">parameters</span><span class="p">())</span>
-<span class="n">frozen_params</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">prod</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">size</span><span class="p">())</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">model_parameters</span><span class="p">])</span>
 <span class="n">unfrozen_params</span> <span class="o">=</span> <span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">p</span><span class="p">:</span> <span class="ow">not</span> <span class="n">p</span><span class="o">.</span><span class="n">requires_grad</span><span class="p">,</span> <span class="n">learn</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">parameters</span><span class="p">())</span>
 <span class="n">unfrozen_params</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">prod</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">size</span><span class="p">())</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">unfrozen_params</span><span class="p">])</span>
+<span class="n">model_parameters</span> <span class="o">=</span> <span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">p</span><span class="p">:</span> <span class="n">p</span><span class="o">.</span><span class="n">requires_grad</span><span class="p">,</span> <span class="n">learn</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">parameters</span><span class="p">())</span>
+<span class="n">frozen_params</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">prod</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">size</span><span class="p">())</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">model_parameters</span><span class="p">])</span>
 </pre></div>
 
     </div>
@@ -366,7 +366,7 @@ will be code snippets that you can then run in any environment.</p>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">frozen_params</span><span class="p">,</span> <span class="n">unfrozen_params</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">unfrozen_params</span><span class="p">,</span> <span class="n">frozen_params</span>
 </pre></div>
 
     </div>
@@ -567,10 +567,10 @@ will be code snippets that you can then run in any environment.</p>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model_parameters</span> <span class="o">=</span> <span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">p</span><span class="p">:</span> <span class="n">p</span><span class="o">.</span><span class="n">requires_grad</span><span class="p">,</span> <span class="n">learn</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">parameters</span><span class="p">())</span>
-<span class="n">frozen_params</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">prod</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">size</span><span class="p">())</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">model_parameters</span><span class="p">])</span>
-<span class="n">unfrozen_params</span> <span class="o">=</span> <span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">p</span><span class="p">:</span> <span class="ow">not</span> <span class="n">p</span><span class="o">.</span><span class="n">requires_grad</span><span class="p">,</span> <span class="n">learn</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">parameters</span><span class="p">())</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">unfrozen_params</span> <span class="o">=</span> <span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">p</span><span class="p">:</span> <span class="ow">not</span> <span class="n">p</span><span class="o">.</span><span class="n">requires_grad</span><span class="p">,</span> <span class="n">learn</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">parameters</span><span class="p">())</span>
 <span class="n">unfrozen_params</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">prod</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">size</span><span class="p">())</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">unfrozen_params</span><span class="p">])</span>
+<span class="n">model_parameters</span> <span class="o">=</span> <span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">p</span><span class="p">:</span> <span class="n">p</span><span class="o">.</span><span class="n">requires_grad</span><span class="p">,</span> <span class="n">learn</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">parameters</span><span class="p">())</span>
+<span class="n">frozen_params</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">prod</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">size</span><span class="p">())</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">model_parameters</span><span class="p">])</span>
 </pre></div>
 
     </div>
@@ -587,7 +587,7 @@ will be code snippets that you can then run in any environment.</p>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">frozen_params</span><span class="p">,</span> <span class="n">unfrozen_params</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">unfrozen_params</span><span class="p">,</span> <span class="n">frozen_params</span>
 </pre></div>
 
     </div>
@@ -618,7 +618,7 @@ will be code snippets that you can then run in any environment.</p>
 <p>They're exactly the same! So now we can utilize any architecture found inside of <code>timm</code> right away, and we built it in a structure very similar to how native <code>fastai</code> does it.</p>
 <p>To use this module in your own work, simply do:</p>
 <div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">wwf.vision.timm</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="n">learn</span> <span class="o">=</span> <span class="n">timm_learner</span><span class="p">(</span><span class="n">dls</span><span class="p">,</span> <span class="n">arch</span><span class="p">,</span> <span class="n">etc</span><span class="p">)</span>
+<span class="n">learn</span> <span class="o">=</span> <span class="n">timm_learner</span><span class="p">(</span><span class="n">dls</span><span class="p">,</span> <span class="s1">&#39;efficientnet_b3a&#39;</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="n">error_rate</span><span class="p">,</span> <span class="n">accuracy</span><span class="p">])</span>
 </pre></div>
 <p>{% include note.html content='<code>timm</code> needs to be installed beforehand' %}</p>
 
