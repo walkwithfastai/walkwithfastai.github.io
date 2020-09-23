@@ -63,7 +63,7 @@ will be code snippets that you can then run in any environment.</p>
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Bringing-in-Non-fastai-Models-into-the-Framework">Bringing in Non-fastai Models into the Framework<a class="anchor-link" href="#Bringing-in-Non-fastai-Models-into-the-Framework"> </a></h2><p>As we are well aware, <code>fastai</code> models deep down are just <code>PyTorch</code> models. However as the field of Machine Learning keeps going, new and fresh architectures are introduced. Wouldn't it be nice if it were easy to integrate them into the <code>fastai</code> framework and play with them?</p>
+<h2 id="Bringing-in-External-Models-into-the-Framework">Bringing in External Models into the Framework<a class="anchor-link" href="#Bringing-in-External-Models-into-the-Framework"> </a></h2><p>As we are well aware, <code>fastai</code> models deep down are just <code>PyTorch</code> models. However as the field of Machine Learning keeps going, new and fresh architectures are introduced. Wouldn't it be nice if it were easy to integrate them into the <code>fastai</code> framework and play with them?</p>
 
 </div>
 </div>
@@ -164,6 +164,25 @@ will be code snippets that you can then run in any environment.</p>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">create_timm_body</span><span class="p">(</span><span class="n">arch</span><span class="p">:</span><span class="nb">str</span><span class="p">,</span> <span class="n">pretrained</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cut</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">n_in</span><span class="o">=</span><span class="mi">3</span><span class="p">):</span>
+    <span class="s2">&quot;Creates a body from any model in the `timm` library.&quot;</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">create_model</span><span class="p">(</span><span class="n">arch</span><span class="p">,</span> <span class="n">pretrained</span><span class="o">=</span><span class="n">pretrained</span><span class="p">,</span> <span class="n">num_classes</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">global_pool</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+    <span class="n">_update_first_layer</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">n_in</span><span class="p">,</span> <span class="n">pretrained</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">cut</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">ll</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">enumerate</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">children</span><span class="p">()))</span>
+        <span class="n">cut</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">o</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">(</span><span class="n">ll</span><span class="p">)</span> <span class="k">if</span> <span class="n">has_pool_type</span><span class="p">(</span><span class="n">o</span><span class="p">))</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">cut</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span> <span class="k">return</span> <span class="n">nn</span><span class="o">.</span><span class="n">Sequential</span><span class="p">(</span><span class="o">*</span><span class="nb">list</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">children</span><span class="p">())[:</span><span class="n">cut</span><span class="p">])</span>
+    <span class="k">elif</span> <span class="n">callable</span><span class="p">(</span><span class="n">cut</span><span class="p">):</span> <span class="k">return</span> <span class="n">cut</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span> <span class="k">raise</span> <span class="n">NamedError</span><span class="p">(</span><span class="s2">&quot;cut must be either integer or function&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
 
 </div>
     {% endraw %}
@@ -179,7 +198,7 @@ will be code snippets that you can then run in any environment.</p>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="create_timm_body" class="doc_header"><code>create_timm_body</code><a href="https://github.com/muellerzr/wwf/tree/master/wwf/vision/timm.py#L13" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>create_timm_body</code>(<strong><code>arch</code></strong>:<code>str</code>, <strong><code>pretrained</code></strong>=<em><code>True</code></em>, <strong><code>cut</code></strong>=<em><code>None</code></em>, <strong><code>n_in</code></strong>=<em><code>3</code></em>)</p>
+<h4 id="create_timm_body" class="doc_header"><code>create_timm_body</code><a href="wwf/vision/timm.py#L13" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>create_timm_body</code>(<strong><code>arch</code></strong>:<code>str</code>, <strong><code>pretrained</code></strong>=<em><code>True</code></em>, <strong><code>cut</code></strong>=<em><code>None</code></em>, <strong><code>n_in</code></strong>=<em><code>3</code></em>)</p>
 </blockquote>
 <p>Creates a body from any model in the <code>timm</code> library.</p>
 
@@ -454,6 +473,26 @@ will be code snippets that you can then run in any environment.</p>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">create_timm_model</span><span class="p">(</span><span class="n">arch</span><span class="p">:</span><span class="nb">str</span><span class="p">,</span> <span class="n">n_out</span><span class="p">,</span> <span class="n">cut</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">pretrained</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">n_in</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">init</span><span class="o">=</span><span class="n">nn</span><span class="o">.</span><span class="n">init</span><span class="o">.</span><span class="n">kaiming_normal_</span><span class="p">,</span> <span class="n">custom_head</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                     <span class="n">concat_pool</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="s2">&quot;Create custom architecture using `arch`, `n_in` and `n_out` from the `timm` library&quot;</span>
+    <span class="n">body</span> <span class="o">=</span> <span class="n">create_timm_body</span><span class="p">(</span><span class="n">arch</span><span class="p">,</span> <span class="n">pretrained</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="n">n_in</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">custom_head</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">nf</span> <span class="o">=</span> <span class="n">num_features_model</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Sequential</span><span class="p">(</span><span class="o">*</span><span class="n">body</span><span class="o">.</span><span class="n">children</span><span class="p">()))</span> <span class="o">*</span> <span class="p">(</span><span class="mi">2</span> <span class="k">if</span> <span class="n">concat_pool</span> <span class="k">else</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="n">head</span> <span class="o">=</span> <span class="n">create_head</span><span class="p">(</span><span class="n">nf</span><span class="p">,</span> <span class="n">n_out</span><span class="p">,</span> <span class="n">concat_pool</span><span class="o">=</span><span class="n">concat_pool</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span> <span class="n">head</span> <span class="o">=</span> <span class="n">custom_head</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Sequential</span><span class="p">(</span><span class="n">body</span><span class="p">,</span> <span class="n">head</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">init</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span> <span class="n">apply_init</span><span class="p">(</span><span class="n">model</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">init</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">model</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
 
 </div>
     {% endraw %}
@@ -469,7 +508,7 @@ will be code snippets that you can then run in any environment.</p>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="create_timm_model" class="doc_header"><code>create_timm_model</code><a href="https://github.com/muellerzr/wwf/tree/master/wwf/vision/timm.py#L25" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>create_timm_model</code>(<strong><code>arch</code></strong>:<code>str</code>, <strong><code>n_out</code></strong>, <strong><code>cut</code></strong>=<em><code>None</code></em>, <strong><code>pretrained</code></strong>=<em><code>True</code></em>, <strong><code>n_in</code></strong>=<em><code>3</code></em>, <strong><code>init</code></strong>=<em><code>kaiming_normal_</code></em>, <strong><code>custom_head</code></strong>=<em><code>None</code></em>, <strong><code>concat_pool</code></strong>=<em><code>True</code></em>, <strong>**<code>kwargs</code></strong>)</p>
+<h4 id="create_timm_model" class="doc_header"><code>create_timm_model</code><a href="wwf/vision/timm.py#L25" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>create_timm_model</code>(<strong><code>arch</code></strong>:<code>str</code>, <strong><code>n_out</code></strong>, <strong><code>cut</code></strong>=<em><code>None</code></em>, <strong><code>pretrained</code></strong>=<em><code>True</code></em>, <strong><code>n_in</code></strong>=<em><code>3</code></em>, <strong><code>init</code></strong>=<em><code>kaiming_normal_</code></em>, <strong><code>custom_head</code></strong>=<em><code>None</code></em>, <strong><code>concat_pool</code></strong>=<em><code>True</code></em>, <strong>**<code>kwargs</code></strong>)</p>
 </blockquote>
 <p>Create custom architecture using <code>arch</code>, <code>n_in</code> and <code>n_out</code> from the <code>timm</code> library</p>
 
@@ -500,6 +539,26 @@ will be code snippets that you can then run in any environment.</p>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">timm_learner</span><span class="p">(</span><span class="n">dls</span><span class="p">,</span> <span class="n">arch</span><span class="p">:</span><span class="nb">str</span><span class="p">,</span> <span class="n">loss_func</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">pretrained</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cut</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">splitter</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                <span class="n">y_range</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">config</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">n_out</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">normalize</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="s2">&quot;Build a convnet style learner from `dls` and `arch` using the `timm` library&quot;</span>
+    <span class="k">if</span> <span class="n">config</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span> <span class="n">config</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">if</span> <span class="n">n_out</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span> <span class="n">n_out</span> <span class="o">=</span> <span class="n">get_c</span><span class="p">(</span><span class="n">dls</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">n_out</span><span class="p">,</span> <span class="s2">&quot;`n_out` is not defined, and could not be inferred from data, set `dls.c` or pass `n_out`&quot;</span>
+    <span class="k">if</span> <span class="n">y_range</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="s1">&#39;y_range&#39;</span> <span class="ow">in</span> <span class="n">config</span><span class="p">:</span> <span class="n">y_range</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s1">&#39;y_range&#39;</span><span class="p">)</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">create_timm_model</span><span class="p">(</span><span class="n">arch</span><span class="p">,</span> <span class="n">n_out</span><span class="p">,</span> <span class="n">default_split</span><span class="p">,</span> <span class="n">pretrained</span><span class="p">,</span> <span class="n">y_range</span><span class="o">=</span><span class="n">y_range</span><span class="p">,</span> <span class="o">**</span><span class="n">config</span><span class="p">)</span>
+    <span class="n">learn</span> <span class="o">=</span> <span class="n">Learner</span><span class="p">(</span><span class="n">dls</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">loss_func</span><span class="o">=</span><span class="n">loss_func</span><span class="p">,</span> <span class="n">splitter</span><span class="o">=</span><span class="n">default_split</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">pretrained</span><span class="p">:</span> <span class="n">learn</span><span class="o">.</span><span class="n">freeze</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">learn</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
 
 </div>
     {% endraw %}
@@ -515,7 +574,7 @@ will be code snippets that you can then run in any environment.</p>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="timm_learner" class="doc_header"><code>timm_learner</code><a href="https://github.com/muellerzr/wwf/tree/master/wwf/vision/timm.py#L41" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>timm_learner</code>(<strong><code>dls</code></strong>, <strong><code>arch</code></strong>:<code>str</code>, <strong><code>loss_func</code></strong>=<em><code>None</code></em>, <strong><code>pretrained</code></strong>=<em><code>True</code></em>, <strong><code>cut</code></strong>=<em><code>None</code></em>, <strong><code>splitter</code></strong>=<em><code>None</code></em>, <strong><code>y_range</code></strong>=<em><code>None</code></em>, <strong><code>config</code></strong>=<em><code>None</code></em>, <strong><code>n_out</code></strong>=<em><code>None</code></em>, <strong><code>normalize</code></strong>=<em><code>True</code></em>, <strong>**<code>kwargs</code></strong>)</p>
+<h4 id="timm_learner" class="doc_header"><code>timm_learner</code><a href="wwf/vision/timm.py#L41" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>timm_learner</code>(<strong><code>dls</code></strong>, <strong><code>arch</code></strong>:<code>str</code>, <strong><code>loss_func</code></strong>=<em><code>None</code></em>, <strong><code>pretrained</code></strong>=<em><code>True</code></em>, <strong><code>cut</code></strong>=<em><code>None</code></em>, <strong><code>splitter</code></strong>=<em><code>None</code></em>, <strong><code>y_range</code></strong>=<em><code>None</code></em>, <strong><code>config</code></strong>=<em><code>None</code></em>, <strong><code>n_out</code></strong>=<em><code>None</code></em>, <strong><code>normalize</code></strong>=<em><code>True</code></em>, <strong>**<code>kwargs</code></strong>)</p>
 </blockquote>
 <p>Build a convnet style learner from <code>dls</code> and <code>arch</code> using the <code>timm</code> library</p>
 
