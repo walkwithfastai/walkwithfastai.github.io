@@ -11,7 +11,7 @@ index = {"get_version": "00_utils.ipynb",
 modules = ["utils.py",
            "vision/timm.py"]
 
-doc_url = "https://www.walkwithfastai.com/"
+doc_url = "https://walkwithfastai.com/"
 
 git_url = "https://github.com/walkwithfastai/walkwithfastai.github.io/tree/master/"
 
