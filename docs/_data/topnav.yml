@@ -2,7 +2,7 @@ topnav:
 - title: Topnav
   items:
     - title: github
-      external_url: https://github.com/muellerzr/Walk with fastai/tree/master/
+      external_url: https://github.com/walkwithfastai/walkwithfastai.github.io/tree/master/
 
 #Topnav dropdowns
 topnav_dropdowns:

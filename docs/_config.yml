@@ -59,7 +59,7 @@ description: "Taking fastai to the next level"
 # theme: jekyll-theme-cayman
 
 baseurl: /
-url: https://www.walkwithfastai.com
+url: https://walkwithfastai.com
 twitter_username: muellerzr
 plugins:
 - jekyll-menus
