@@ -612,10 +612,8 @@ Train: [0 1 2 3 4 5 6 7], Valid: [8]
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Using-It-During-Training">Using It During Training<a class="anchor-link" href="#Using-It-During-Training"> </a></h3><p>Now the question is how can I use this when training on our data?</p>
-<p>I decided to show tabular first as it requires some special care.</p>
-<p>Why?</p>
-<p>When we preprocess our training dataset, we build our <code>procs</code> based upon it. When doing a CV (Cross Validation) we will often exclude some data as it gets pushed to the validation set, leading to such errors as:</p>
+<h3 id="Extra-Preprocessing">Extra Preprocessing<a class="anchor-link" href="#Extra-Preprocessing"> </a></h3><p>Now the question is how can I use this when training on our data?</p>
+<p>When we preprocess our tabular training dataset, we build our <code>procs</code> based upon it. When doing a CV (Cross Validation) we will often exclude some data as it gets pushed to the validation set, leading to such errors as:</p>
 
 </div>
 </div>
@@ -728,7 +726,7 @@ Train: [0 1 2 3 4 5 6 7], Valid: [8]
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Using-It-During-Training">Using It During Training<a class="anchor-link" href="#Using-It-During-Training"> </a></h3><p>Now that we have our adjusted <code>procs</code>, let's try training.</p>
+<h3 id="Now-Let's-Train">Now Let's Train<a class="anchor-link" href="#Now-Let's-Train"> </a></h3><p>Now that we have our adjusted <code>procs</code>, let's try training.</p>
 <p>We'll want to make a loop that will do the following:</p>
 <ol>
 <li>Make our <code>KFold</code> and split</li>
