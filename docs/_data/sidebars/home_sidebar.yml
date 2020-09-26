@@ -42,7 +42,7 @@ entries:
           url: /tab.clas.binary
         title: Classification
     - output: web,pdf
-      title: Cross Validation
+      title: Cross Validation (Intermediate)
       url: /tab.cv
     output: web
     title: Tabular
