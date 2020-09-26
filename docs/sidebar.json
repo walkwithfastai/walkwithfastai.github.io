@@ -21,6 +21,7 @@
             "Classification": {
                 "Binary (Beginner)": "/tab.clas.binary"
             }
-        }
+        },
+        "Cross Validation": "/tab.cv"
     }
 }

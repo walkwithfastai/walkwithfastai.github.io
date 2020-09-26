@@ -41,6 +41,9 @@ entries:
           title: Binary (Beginner)
           url: /tab.clas.binary
         title: Classification
+    - output: web,pdf
+      title: Cross Validation
+      url: /tab.cv
     output: web
     title: Tabular
   output: web

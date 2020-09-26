@@ -695,7 +695,7 @@ untar_data(url, fname=None, dest=None, c_key=&#39;data&#39;, force_download=Fals
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Some assumptions and magic is being done here:</p>
 <ul>
-<li>Loss function is assumed as classification (from the <a href="https://docs.fast.ai/data.core#DataLoaders"><code>DataLoaders</code></a>), so <a href="https://docs.fast.ai/losses#CrossEntropyLossFlat"><code>CrossEntropyLossFlat</code></a> is being used</li>
+<li>Loss function is assumed as classification (from the <a href="https://docs.fast.ai/data.core#DataLoaders"><code>DataLoaders</code></a>), so <a href="https://docs.fast.ai/layers#CrossEntropyLossFlat"><code>CrossEntropyLossFlat</code></a> is being used</li>
 <li>By default the optimizer is Adam</li>
 <li>A custom head was added onto our ResNet body, with the body's weights being frozen</li>
 </ul>
