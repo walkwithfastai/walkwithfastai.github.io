@@ -22,6 +22,6 @@
                 "Binary (Beginner)": "/tab.clas.binary"
             }
         },
-        "Cross Validation (Intermediate)": "/tab.cv"
+        "AutoEncoders (Intermediate)": "/tab.ae"
     }
 }

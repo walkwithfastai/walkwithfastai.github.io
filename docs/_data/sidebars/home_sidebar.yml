@@ -42,8 +42,8 @@ entries:
           url: /tab.clas.binary
         title: Classification
     - output: web,pdf
-      title: Cross Validation (Intermediate)
-      url: /tab.cv
+      title: AutoEncoders (Intermediate)
+      url: /tab.ae
     output: web
     title: Tabular
   output: web
