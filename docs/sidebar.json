@@ -2,27 +2,31 @@
 	"Introduction": {
 		"How to Contribute a Chapter": "/intro.contribute"
 	},
-    "Vision": {
-        "Introduction": "/vision.intro",
-        "": {
-            "Classification": {
-                "Single Label (Beginner)": "/vision.clas.single_label"
-            }
-        },
-        "empty1": {
-            "External Model Integrations": {
-                "timm": "/vision.external.timm"
-            }
-        }
-    },
-    "Tabular": {
-        "Introduction": "/tab.clas.binary",
-        "": {
-            "Classification": {
-                "Binary (Beginner)": "/tab.clas.binary"
-            }
-        },
-        "AutoEncoders (Intermediate)": "/tab.ae",
-        "Using TabularPandas in Production": "/tab.export"
-    }
+	"Vision": {
+		"Introduction": "/vision.intro",
+		"": {
+			"Classification": {
+				"Single Label (Beginner)": "/vision.clas.single_label"
+			}
+		},
+		"empty1": {
+			"External Model Integrations": {
+				"timm": "/vision.external.timm"
+			}
+		}
+	},
+	"Tabular": {
+		"Introduction": "/tab.clas.binary",
+		"": {
+			"Classification": {
+				"Binary (Beginner)": "/tab.clas.binary"
+			}
+		},
+		"empty1": {
+			"Useful TabularPandas Extensions": {
+				"Using TabularPandas in Production (Beginner)": "/tab.export"
+			}
+		},
+		"AutoEncoders (Intermediate)": "/tab.ae"
+	}
 }

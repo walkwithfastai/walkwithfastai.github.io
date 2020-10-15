@@ -41,12 +41,15 @@ entries:
           title: Binary (Beginner)
           url: /tab.clas.binary
         title: Classification
+      - output: web
+        subfolderitems:
+        - output: web,pdf
+          title: Using TabularPandas in Production (Beginner)
+          url: /tab.export
+        title: Useful TabularPandas Extensions
     - output: web,pdf
       title: AutoEncoders (Intermediate)
       url: /tab.ae
-    - output: web,pdf
-      title: Using TabularPandas in Production
-      url: /tab.export
     output: web
     title: Tabular
   output: web
