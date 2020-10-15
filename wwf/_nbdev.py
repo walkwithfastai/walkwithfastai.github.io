@@ -6,10 +6,13 @@ index = {"get_version": "00_utils.ipynb",
          "state_versions": "00_utils.ipynb",
          "create_timm_body": "02_vision.external.timm.ipynb",
          "create_timm_model": "02_vision.external.timm.ipynb",
-         "timm_learner": "02_vision.external.timm.ipynb"}
+         "timm_learner": "02_vision.external.timm.ipynb",
+         "TabularPandas.export": "03_tab.export.ipynb",
+         "load_pandas": "03_tab.export.ipynb"}
 
 modules = ["utils.py",
-           "vision/timm.py"]
+           "vision/timm.py",
+           "tab/export.py"]
 
 doc_url = "https://walkwithfastai.com/"
 
