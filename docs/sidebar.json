@@ -22,6 +22,7 @@
                 "Binary (Beginner)": "/tab.clas.binary"
             }
         },
-        "AutoEncoders (Intermediate)": "/tab.ae"
+        "AutoEncoders (Intermediate)": "/tab.ae",
+        "Using TabularPandas in Production": "/tab.export"
     }
 }

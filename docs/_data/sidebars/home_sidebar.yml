@@ -44,6 +44,9 @@ entries:
     - output: web,pdf
       title: AutoEncoders (Intermediate)
       url: /tab.ae
+    - output: web,pdf
+      title: Using TabularPandas in Production
+      url: /tab.export
     output: web
     title: Tabular
   output: web
