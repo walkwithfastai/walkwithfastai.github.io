@@ -11,7 +11,7 @@
 		},
 		"empty1": {
 			"External Model Integrations": {
-				"timm": "/vision.external.timm"
+				"timm (Intermediate)": "/vision.external.timm"
 			}
 		}
 	},

@@ -25,7 +25,7 @@ entries:
       - output: web
         subfolderitems:
         - output: web,pdf
-          title: timm
+          title: timm (Intermediate)
           url: /vision.external.timm
         title: External Model Integrations
     output: web
