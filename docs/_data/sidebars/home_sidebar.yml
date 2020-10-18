@@ -44,8 +44,11 @@ entries:
       - output: web
         subfolderitems:
         - output: web,pdf
-          title: Using TabularPandas in Production (Beginner)
+          title: Production (Beginner)
           url: /tab.export
+        - output: web,pdf
+          title: Custom Transform Statistics (Intermediate)
+          url: /tab.stats
         title: Useful TabularPandas Extensions
     - output: web,pdf
       title: AutoEncoders (Intermediate)

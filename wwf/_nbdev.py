@@ -8,11 +8,16 @@ index = {"get_version": "00_utils.ipynb",
          "create_timm_model": "02_vision.external.timm.ipynb",
          "timm_learner": "02_vision.external.timm.ipynb",
          "TabularPandas.export": "03_tab.export.ipynb",
-         "load_pandas": "03_tab.export.ipynb"}
+         "load_pandas": "03_tab.export.ipynb",
+         "Categorify": "03_tab.stats.ipynb",
+         "Normalize.__init__": "03_tab.stats.ipynb",
+         "setups": "03_tab.stats.ipynb",
+         "FillMissing": "03_tab.stats.ipynb"}
 
 modules = ["utils.py",
            "vision/timm.py",
-           "tab/export.py"]
+           "tab/export.py",
+           "tab/stats.py"]
 
 doc_url = "https://walkwithfastai.com/"
 

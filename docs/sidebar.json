@@ -24,7 +24,8 @@
 		},
 		"empty1": {
 			"Useful TabularPandas Extensions": {
-				"Using TabularPandas in Production (Beginner)": "/tab.export"
+				"Production (Beginner)": "/tab.export",
+				"Custom Transform Statistics (Intermediate)": "/tab.stats"
 			}
 		},
 		"AutoEncoders (Intermediate)": "/tab.ae"
