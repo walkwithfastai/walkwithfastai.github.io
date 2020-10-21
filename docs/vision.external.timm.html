@@ -172,7 +172,7 @@ will be code snippets that you can then run in any environment.</p>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="create_timm_body" class="doc_header"><code>create_timm_body</code><a href="wwf/vision/timm.py#L13" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>create_timm_body</code>(<strong><code>arch</code></strong>:<code>str</code>, <strong><code>pretrained</code></strong>=<em><code>True</code></em>, <strong><code>cut</code></strong>=<em><code>None</code></em>, <strong><code>n_in</code></strong>=<em><code>3</code></em>)</p>
+<h4 id="create_timm_body" class="doc_header"><code>create_timm_body</code><a href="https://github.com/walkwithfastai/walkwithfastai.github.io/tree/master/wwf/vision/timm.py#L13" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>create_timm_body</code>(<strong><code>arch</code></strong>:<code>str</code>, <strong><code>pretrained</code></strong>=<em><code>True</code></em>, <strong><code>cut</code></strong>=<em><code>None</code></em>, <strong><code>n_in</code></strong>=<em><code>3</code></em>)</p>
 </blockquote>
 <p>Creates a body from any model in the <code>timm</code> library.</p>
 
@@ -481,7 +481,7 @@ will be code snippets that you can then run in any environment.</p>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="create_timm_model" class="doc_header"><code>create_timm_model</code><a href="wwf/vision/timm.py#L25" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>create_timm_model</code>(<strong><code>arch</code></strong>:<code>str</code>, <strong><code>n_out</code></strong>, <strong><code>cut</code></strong>=<em><code>None</code></em>, <strong><code>pretrained</code></strong>=<em><code>True</code></em>, <strong><code>n_in</code></strong>=<em><code>3</code></em>, <strong><code>init</code></strong>=<em><code>kaiming_normal_</code></em>, <strong><code>custom_head</code></strong>=<em><code>None</code></em>, <strong><code>concat_pool</code></strong>=<em><code>True</code></em>, <strong>**<code>kwargs</code></strong>)</p>
+<h4 id="create_timm_model" class="doc_header"><code>create_timm_model</code><a href="https://github.com/walkwithfastai/walkwithfastai.github.io/tree/master/wwf/vision/timm.py#L25" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>create_timm_model</code>(<strong><code>arch</code></strong>:<code>str</code>, <strong><code>n_out</code></strong>, <strong><code>cut</code></strong>=<em><code>None</code></em>, <strong><code>pretrained</code></strong>=<em><code>True</code></em>, <strong><code>n_in</code></strong>=<em><code>3</code></em>, <strong><code>init</code></strong>=<em><code>kaiming_normal_</code></em>, <strong><code>custom_head</code></strong>=<em><code>None</code></em>, <strong><code>concat_pool</code></strong>=<em><code>True</code></em>, <strong>**<code>kwargs</code></strong>)</p>
 </blockquote>
 <p>Create custom architecture using <code>arch</code>, <code>n_in</code> and <code>n_out</code> from the <code>timm</code> library</p>
 
@@ -547,7 +547,7 @@ will be code snippets that you can then run in any environment.</p>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="timm_learner" class="doc_header"><code>timm_learner</code><a href="wwf/vision/timm.py#L41" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>timm_learner</code>(<strong><code>dls</code></strong>, <strong><code>arch</code></strong>:<code>str</code>, <strong><code>loss_func</code></strong>=<em><code>None</code></em>, <strong><code>pretrained</code></strong>=<em><code>True</code></em>, <strong><code>cut</code></strong>=<em><code>None</code></em>, <strong><code>splitter</code></strong>=<em><code>None</code></em>, <strong><code>y_range</code></strong>=<em><code>None</code></em>, <strong><code>config</code></strong>=<em><code>None</code></em>, <strong><code>n_out</code></strong>=<em><code>None</code></em>, <strong><code>normalize</code></strong>=<em><code>True</code></em>, <strong>**<code>kwargs</code></strong>)</p>
+<h4 id="timm_learner" class="doc_header"><code>timm_learner</code><a href="https://github.com/walkwithfastai/walkwithfastai.github.io/tree/master/wwf/vision/timm.py#L41" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>timm_learner</code>(<strong><code>dls</code></strong>, <strong><code>arch</code></strong>:<code>str</code>, <strong><code>loss_func</code></strong>=<em><code>None</code></em>, <strong><code>pretrained</code></strong>=<em><code>True</code></em>, <strong><code>cut</code></strong>=<em><code>None</code></em>, <strong><code>splitter</code></strong>=<em><code>None</code></em>, <strong><code>y_range</code></strong>=<em><code>None</code></em>, <strong><code>config</code></strong>=<em><code>None</code></em>, <strong><code>n_out</code></strong>=<em><code>None</code></em>, <strong><code>normalize</code></strong>=<em><code>True</code></em>, <strong>**<code>kwargs</code></strong>)</p>
 </blockquote>
 <p>Build a convnet style learner from <code>dls</code> and <code>arch</code> using the <code>timm</code> library</p>
 

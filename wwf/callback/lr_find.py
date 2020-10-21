@@ -3,6 +3,9 @@
 __all__ = []
 
 # Cell
+from fastai.vision.all import *
+
+# Cell
 @patch
 def plot_lr_find(self:Recorder, suggestions= False,skip_end=5, lr_min=None, lr_steep=None):
     "Plot the result of an LR Finder test (won't work if you didn't do `learn.lr_find()` before)"

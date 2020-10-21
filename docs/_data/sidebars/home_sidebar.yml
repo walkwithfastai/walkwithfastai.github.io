@@ -55,5 +55,11 @@ entries:
       url: /tab.ae
     output: web
     title: Tabular
+  - folderitems:
+    - output: web,pdf
+      title: Finding a Learning Rate (Beginner)
+      url: /lr_finder
+    output: web
+    title: General Training Tutorials
   output: web
   title: Sidebar
