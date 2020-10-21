@@ -12,12 +12,15 @@ index = {"get_version": "00_utils.ipynb",
          "Categorify": "03_tab.stats.ipynb",
          "Normalize.__init__": "03_tab.stats.ipynb",
          "setups": "03_tab.stats.ipynb",
-         "FillMissing": "03_tab.stats.ipynb"}
+         "FillMissing": "03_tab.stats.ipynb",
+         "Recorder.plot_lr_find": "04_lr_finder.ipynb",
+         "Learner.lr_find": "04_lr_finder.ipynb"}
 
 modules = ["utils.py",
            "vision/timm.py",
            "tab/export.py",
-           "tab/stats.py"]
+           "tab/stats.py",
+           "callback/lr_find.py"]
 
 doc_url = "https://walkwithfastai.com/"
 
