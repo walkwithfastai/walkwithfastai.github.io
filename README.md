@@ -16,3 +16,12 @@ There is a central framework and theme for each super chapter, as you can see in
 These collection of articles can be as simple as showing a few lines of code for a use-case, to as advanced as introducing and explaining a topic.
 
 At the end of the day, I want this site to be a nice resource for folks to look up quickly how to do XYZ technique inside the library, that perhaps isn't 100% integrated or supported in the library's current status. 
+
+## Installation
+To install with pip, use: `pip install wwf`.
+
+If you plan to contribute, or want to work with the latest changes:
+```
+git clone https://github.com/walkwithfastai/walkwithfastai.github.io/
+pip install -e walkwithfastai.github.io
+```
