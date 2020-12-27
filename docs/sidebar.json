@@ -4,7 +4,7 @@
 	},
 	"Course 2019": {
 		"Introduction": "/Walk with fastai Course/Introduction",
-		"Vision Block": {
+		"": {
 			"Lesson 1": {
 				"Introduction": "/Introduction",
 				"Pets and the High Level API": "/Pets",
