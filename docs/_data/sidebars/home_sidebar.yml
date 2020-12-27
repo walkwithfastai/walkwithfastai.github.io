@@ -15,7 +15,6 @@ entries:
     - output: web,pdf
       title: Introduction
       url: /Walk with fastai Course/Introduction
-    - output: web
       subfolders:
       - output: web
         subfolderitems:
@@ -28,7 +27,7 @@ entries:
         - output: web,pdf
           title: Image Classification with a Custom Dataset
           url: /Walk with fastai Course/Custom
-        title: Lesson 1
+        title: Lesson 1 (Vision)
       - output: web
         subfolderitems:
         - output: web,pdf
@@ -40,8 +39,7 @@ entries:
         - output: web,pdf
           title: Deployment
           url: /Walk with fastai Course/Deployment
-        title: Lesson 2
-      title: Vision Block
+        title: Lesson 2 (Vision)
     output: web
     title: Course 2019
   - folderitems:
