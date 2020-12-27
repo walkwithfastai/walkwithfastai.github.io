@@ -21,25 +21,25 @@ entries:
         subfolderitems:
         - output: web,pdf
           title: Introduction
-          url: /Walk with fastai Course/Introduction
+          url: /Introduction
         - output: web,pdf
           title: Pets and the High Level API
-          url: /Walk with fastai Course/Pets
+          url: /Pets
         - output: web,pdf
           title: Image Classification with a Custom Dataset
-          url: /Walk with fastai Course/Custom
+          url: /Custom
         title: Lesson 1
       - output: web
         subfolderitems:
         - output: web,pdf
           title: Low-Level API with MNIST and Building Models
-          url: /Walk with fastai Course/MNIST
+          url: /MNIST
         - output: web,pdf
           title: Stochastic Gradient Descent
-          url: /Walk with fastai Course/SGD
+          url: /SGD
         - output: web,pdf
           title: Deployment
-          url: /Walk with fastai Course/Deployment
+          url: /Deployment
         title: Lesson 2
       title: Vision Block
     output: web
