@@ -14,7 +14,7 @@ entries:
   - folderitems:
     - output: web,pdf
       title: Introduction
-      url: /Walk with fastai Course/Introduction
+      url: /Introduction
       subfolders:
       - output: web
         subfolderitems:
