@@ -41,7 +41,7 @@ entries:
           url: /Deployment
         title: Lesson 2
     output: web
-    title: Course 2019
+    title: Course 2020
   - folderitems:
     - output: web,pdf
       title: Introduction
