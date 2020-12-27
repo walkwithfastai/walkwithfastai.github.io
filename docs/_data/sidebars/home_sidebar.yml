@@ -15,7 +15,6 @@ entries:
     - output: web,pdf
       title: Introduction
       url: /Walk with fastai Course/Introduction
-    - output: web
       subfolders:
       - output: web
         subfolderitems:
@@ -41,7 +40,6 @@ entries:
           title: Deployment
           url: /Deployment
         title: Lesson 2
-      title: Vision Block
     output: web
     title: Course 2019
   - folderitems:
