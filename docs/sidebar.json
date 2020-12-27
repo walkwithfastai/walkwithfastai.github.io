@@ -2,6 +2,21 @@
 	"Introduction": {
 		"How to Contribute a Chapter": "/intro.contribute"
 	},
+	"Course 2019": {
+		"Introduction": "/Walk with fastai Course/Introduction",
+		"Vision Block": {
+			"Lesson 1": {
+				"Introduction": "/Walk with fastai Course/Introduction",
+				"Pets and the High Level API": "/Walk with fastai Course/Pets",
+				"Image Classification with a Custom Dataset": "/Walk with fastai Course/Custom"
+			},
+			"Lesson 2": {
+				"Low-Level API with MNIST and Building Models": "/Walk with fastai Course/MNIST",
+				"Stochastic Gradient Descent": "/Walk with fastai Course/SGD",
+				"Deployment": "/Walk with fastai Course/Deployment"
+			}
+		}
+	},
 	"Vision": {
 		"Introduction": "/vision.intro",
 		"": {
