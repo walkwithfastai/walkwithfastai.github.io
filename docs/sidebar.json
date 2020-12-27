@@ -4,16 +4,16 @@
 	},
 	"Course 2019": {
 		"Introduction": "/Walk with fastai Course/Introduction",
-		"": {
-			"Lesson 1 (Vision)": {
-				"Introduction": "/Walk with fastai Course/Introduction",
-				"Pets and the High Level API": "/Walk with fastai Course/Pets",
-				"Image Classification with a Custom Dataset": "/Walk with fastai Course/Custom"
+		"Vision Block": {
+			"Lesson 1": {
+				"Introduction": "/Introduction",
+				"Pets and the High Level API": "/Pets",
+				"Image Classification with a Custom Dataset": "/Custom"
 			},
-			"Lesson 2 (Vision)": {
-				"Low-Level API with MNIST and Building Models": "/Walk with fastai Course/MNIST",
-				"Stochastic Gradient Descent": "/Walk with fastai Course/SGD",
-				"Deployment": "/Walk with fastai Course/Deployment"
+			"Lesson 2": {
+				"Low-Level API with MNIST and Building Models": "/MNIST",
+				"Stochastic Gradient Descent": "/SGD",
+				"Deployment": "/Deployment"
 			}
 		}
 	},
