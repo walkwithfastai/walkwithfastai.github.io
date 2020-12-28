@@ -3,10 +3,10 @@
 __all__ = ['get_version', 'state_versions']
 
 # Cell
-import pkg_resources
+from importlib_metadata import version
 def get_version(lib:str):
     "Returns version of `lib`"
-    return pkg_resources.get_distribution(lib).version
+    return version(lib)
 
 # Cell
 from IPython.display import Markdown
