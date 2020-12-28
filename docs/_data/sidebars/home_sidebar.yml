@@ -14,46 +14,46 @@ entries:
   - folderitems:
     - output: web,pdf
       title: Introduction
-      url: /Walk with fastai Course/Introduction
+      url: /Introduction
       subfolders:
       - output: web
         subfolderitems:
         - output: web,pdf
           title: Introduction
-          url: /Walk with fastai Course/Introduction
+          url: /Introduction
         - output: web,pdf
           title: Pets and the High Level API
-          url: /Walk with fastai Course/Pets
+          url: /Pets
         - output: web,pdf
           title: Image Classification with a Custom Dataset
-          url: /Walk with fastai Course/Custom
+          url: /Custom
         title: Lesson 1 (Vision)
       - output: web
         subfolderitems:
         - output: web,pdf
           title: Low-Level API with MNIST and Building Models
-          url: /Walk with fastai Course/MNIST
+          url: /MNIST
         - output: web,pdf
           title: Stochastic Gradient Descent
-          url: /Walk with fastai Course/SGD
+          url: /SGD
         - output: web,pdf
           title: Deployment
-          url: /Walk with fastai Course/Deployment
+          url: /Deployment
         title: Lesson 2 (Vision)
       - output: web
         subfolderitems:
         - output: web,pdf
           title: Multi-Label Classification
-          url: /Walk with fastai Course/Multi_Label
+          url: /Multi_Label
         - output: web,pdf
           title: Recognizing Unkown Images (or the Unknown Label problem)
-          url: /Walk with fastai Course/Unknown_Label
+          url: /Unknown_Label
         - output: web,pdf
           title: Cross Validation and Ensembling
-          url: /Walk with fastai Course/Cross_Validation
+          url: /Cross_Validation
         - output: web,pdf
           title: The Internal API of fastai
-          url: /Walk with fastai Course/Internal_API_Walkthrough
+          url: /Internal_API_Walkthrough
         title: Lesson 3 (Vision)
     output: web
     title: Course 2020
