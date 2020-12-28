@@ -47,7 +47,7 @@ entries:
           url: /Multi_Label
         - output: web,pdf
           title: Recognizing Unkown Images (or the Unknown Label problem)
-          url: /Unknown_Label
+          url: /Unknown_Labels
         - output: web,pdf
           title: Cross Validation and Ensembling
           url: /Cross_Validation

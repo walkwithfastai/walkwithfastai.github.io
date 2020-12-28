@@ -17,7 +17,7 @@
 			},
 			"Lesson 3 (Vision)": {
 				"Multi-Label Classification": "/Multi_Label",
-				"Recognizing Unkown Images (or the Unknown Label problem)": "/Unknown_Label",
+				"Recognizing Unkown Images (or the Unknown Label problem)": "/Unknown_Labels",
 				"Cross Validation and Ensembling": "/Cross_Validation",
 				"The Internal API of fastai": "/Internal_API_Walkthrough"
 			}
