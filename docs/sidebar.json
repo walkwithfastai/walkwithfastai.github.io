@@ -20,6 +20,11 @@
 				"Recognizing Unkown Images (or the Unknown Label problem)": "/Unknown_Labels",
 				"Cross Validation and Ensembling": "/Cross_Validation",
 				"The Internal API of fastai": "/Internal_API_Walkthrough"
+			},
+			"Lesson 4 (Vision)": {
+				"Image Segmentation": "/Segmentation",
+				"ImageWoof and Exploring SOTA in fastai": "/ImageWoof",
+				"Debugging with the DataBlock": "/DBlock_Summary"
 			}
 		}
 	},

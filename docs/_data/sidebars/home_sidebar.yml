@@ -55,6 +55,18 @@ entries:
           title: The Internal API of fastai
           url: /Internal_API_Walkthrough
         title: Lesson 3 (Vision)
+      - output: web
+        subfolderitems:
+        - output: web,pdf
+          title: Image Segmentation
+          url: /Segmentation
+        - output: web,pdf
+          title: ImageWoof and Exploring SOTA in fastai
+          url: /ImageWoof
+        - output: web,pdf
+          title: Debugging with the DataBlock
+          url: /DBlock_Summary
+        title: Lesson 4 (Vision)
     output: web
     title: Course 2020
   - folderitems:
