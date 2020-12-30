@@ -67,6 +67,18 @@ entries:
           title: Debugging with the DataBlock
           url: /DBlock_Summary
         title: Lesson 4 (Vision)
+      - output: web
+        subfolderitems:
+        - output: web,pdf
+          title: Style Transfer
+          url: /Style_Transfer
+        - output: web,pdf
+          title: Deployment Continued
+          url: /Inference_Server
+        - output: web,pdf
+          title: EfficientNet and Custom Weights
+          url: /EfficientNet_and_Custom_Weights
+        title: Lesson 5 (Vision)
     output: web
     title: Course 2020
   - folderitems:

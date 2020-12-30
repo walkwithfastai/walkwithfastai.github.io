@@ -25,6 +25,11 @@
 				"Image Segmentation": "/Segmentation",
 				"ImageWoof and Exploring SOTA in fastai": "/ImageWoof",
 				"Debugging with the DataBlock": "/DBlock_Summary"
+			},
+			"Lesson 5 (Vision)": {
+				"Style Transfer": "/Style_Transfer",
+				"Deployment Continued": "/Inference_Server",
+				"EfficientNet and Custom Weights": "/EfficientNet_and_Custom_Weights"
 			}
 		}
 	},

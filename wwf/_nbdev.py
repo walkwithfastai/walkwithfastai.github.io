@@ -2,25 +2,25 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"get_version": "00_utils.ipynb",
-         "state_versions": "00_utils.ipynb",
-         "create_timm_body": "02_vision.external.timm.ipynb",
-         "create_timm_model": "02_vision.external.timm.ipynb",
-         "timm_learner": "02_vision.external.timm.ipynb",
-         "TabularPandas.export": "03_tab.export.ipynb",
-         "load_pandas": "03_tab.export.ipynb",
-         "Categorify": "03_tab.stats.ipynb",
-         "Normalize.__init__": "03_tab.stats.ipynb",
-         "setups": "03_tab.stats.ipynb",
-         "FillMissing": "03_tab.stats.ipynb",
-         "Recorder.plot_lr_find": "04_lr_finder.ipynb",
-         "Learner.lr_find": "04_lr_finder.ipynb"}
+index = {"get_learner": "05_Inference_Server.ipynb",
+         "make_datasets": "05_Inference_Server.ipynb",
+         "save_im": "05_Inference_Server.ipynb",
+         "inference": "05_Inference_Server.ipynb",
+         "get_feats": "05_Style_Transfer.ipynb",
+         "url": "05_Style_Transfer.ipynb",
+         "get_style_im": "05_Style_Transfer.ipynb",
+         "gram": "05_Style_Transfer.ipynb",
+         "get_stl_fs": "05_Style_Transfer.ipynb",
+         "style_loss": "05_Style_Transfer.ipynb",
+         "FeatureLoss": "05_Style_Transfer.ipynb",
+         "act_loss": "05_Style_Transfer.ipynb",
+         "ReflectionLayer": "05_Style_Transfer.ipynb",
+         "ResidualBlock": "05_Style_Transfer.ipynb",
+         "UpsampleConvLayer": "05_Style_Transfer.ipynb",
+         "TransformerNet": "05_Style_Transfer.ipynb"}
 
-modules = ["utils.py",
-           "vision/timm.py",
-           "tab/export.py",
-           "tab/stats.py",
-           "callback/lr_find.py"]
+modules = ["deployment.py",
+           "style_transfer.py"]
 
 doc_url = "https://walkwithfastai.com/"
 
