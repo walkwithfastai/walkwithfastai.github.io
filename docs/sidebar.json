@@ -30,6 +30,22 @@
 				"Style Transfer": "/Style_Transfer",
 				"Deployment Continued": "/Inference_Server",
 				"EfficientNet and Custom Weights": "/EfficientNet_and_Custom_Weights"
+			},
+			"Lesson 6 (Vision)": {
+				"Keypoint Regression": "/Keypoint_Regression",
+				"Hybridizing Models": "/Hybridizing_Models",
+				"Object Detection": "/Object_Detection",
+				"Multimodal Head and Kaggle": "/Multimodal_Head_and_Kaggle"
+			},
+			"Lesson 7 (Vision)": {
+				"Super Resolution": "/Super_Resolution",
+				"Siamese": "/Siamese",
+				"Audio": "/Audio"
+			},
+			"Bonus Notebooks (Vision)": {
+				"Binary Segmentation": "/Binary_Segmentation",
+				"Multi-Point Regression": "/Multi_Point_Regression",
+				"Scalar Regression": "/Scalar_Regression"
 			}
 		}
 	},
