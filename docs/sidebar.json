@@ -43,8 +43,8 @@
 				"Audio": "/Audio"
 			},
 			"Lesson 1 (Tabular)": {
-				"Introduction to Pandas": "/01_Pandas",
-				"The Tabular API with Binary Classification": "/01_Adults"
+				"Introduction to Pandas": "/Pandas",
+				"The Tabular API with Binary Classification": "/Adults"
 			}
 		}
 	},

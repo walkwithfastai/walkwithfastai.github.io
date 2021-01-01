@@ -110,10 +110,10 @@ entries:
         subfolderitems:
         - output: web,pdf
           title: Introduction to Pandas
-          url: /01_Pandas
+          url: /Pandas
         - output: web,pdf
           title: The Tabular API with Binary Classification
-          url: /01_Adults
+          url: /Adults
         title: Lesson 1 (Tabular)
     output: web
     title: Course 2020
