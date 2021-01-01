@@ -106,18 +106,6 @@ entries:
           title: Audio
           url: /Audio
         title: Lesson 7 (Vision)
-      - output: web
-        subfolderitems:
-        - output: web,pdf
-          title: Binary Segmentation
-          url: /Binary_Segmentation
-        - output: web,pdf
-          title: Multi-Point Regression
-          url: /Multi_Point_Regression
-        - output: web,pdf
-          title: Scalar Regression
-          url: /Scalar_Regression
-        title: Bonus Notebooks (Vision)
     output: web
     title: Course 2020
   - folderitems:
@@ -134,9 +122,21 @@ entries:
       - output: web
         subfolderitems:
         - output: web,pdf
+          title: Multi-Point (Beginner)
+          url: /Multi_Point_Regression
+        - output: web,pdf
+          title: Scalar (Beginner)
+          url: /Scalar_Regression
+        title: Regression
+      - output: web
+        subfolderitems:
+        - output: web,pdf
           title: timm (Intermediate)
           url: /vision.external.timm
         title: External Model Integrations
+    - output: web,pdf
+      title: Binary Segmentation (Beginner)
+      url: /Binary_Segmentation
     output: web
     title: Vision
   - folderitems:

@@ -41,11 +41,6 @@
 				"Super Resolution": "/Super_Resolution",
 				"Siamese": "/Siamese",
 				"Audio": "/Audio"
-			},
-			"Bonus Notebooks (Vision)": {
-				"Binary Segmentation": "/Binary_Segmentation",
-				"Multi-Point Regression": "/Multi_Point_Regression",
-				"Scalar Regression": "/Scalar_Regression"
 			}
 		}
 	},
@@ -57,10 +52,17 @@
 			}
 		},
 		"empty1": {
+			"Regression": {
+				"Multi-Point (Beginner)": "/Multi_Point_Regression",
+				"Scalar (Beginner)": "/Scalar_Regression"
+			}
+		},
+		"empty2": {
 			"External Model Integrations": {
 				"timm (Intermediate)": "/vision.external.timm"
 			}
-		}
+		},
+		"Binary Segmentation (Beginner)": "/Binary_Segmentation"
 	},
 	"Tabular": {
 		"Introduction": "/tab.clas.binary",
@@ -77,7 +79,7 @@
 		},
 		"AutoEncoders (Intermediate)": "/tab.ae"
 	},
-    "General Training Tutorials": {
-        "Finding a Learning Rate (Beginner)": "/lr_finder"
-    }
+	"General Training Tutorials": {
+		"Finding a Learning Rate (Beginner)": "/lr_finder"
+	}
 }
