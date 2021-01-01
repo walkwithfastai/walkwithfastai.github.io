@@ -127,6 +127,18 @@ entries:
           title: Bayesian Optimization
           url: /Bayesian_Optimization
         title: Lesson 2 (Tabular)
+      - output: web
+        subfolderitems:
+        - output: web,pdf
+          title: SHAP and fastinference
+          url: /SHAP
+        - output: web,pdf
+          title: ClassConfusion and fastinference
+          url: /ClassConfusion
+        - output: web,pdf
+          title: Doing Research
+          url: /Research
+        title: Lesson 3 (Tabular)
     output: web
     title: Course 2020
   - folderitems:

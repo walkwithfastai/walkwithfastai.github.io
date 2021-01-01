@@ -50,6 +50,11 @@
 				"Regression and Permutation Importance": "/Regression_and_Permutation_Importance",
 				"Ensembling with Other Libraries": "/Ensembling",
 				"Bayesian Optimization": "/Bayesian_Optimization"
+			},
+			"Lesson 3 (Tabular)": {
+				"SHAP and fastinference": "/SHAP",
+				"ClassConfusion and fastinference": "/ClassConfusion",
+				"Doing Research": "/Research"
 			}
 		}
 	},
