@@ -139,6 +139,15 @@ entries:
           title: Doing Research
           url: /Research
         title: Lesson 3 (Tabular)
+      - output: web
+        subfolderitems:
+        - output: web,pdf
+          title: TabNet
+          url: /TabNet
+        - output: web,pdf
+          title: Time Series
+          url: /TimeSeries
+        title: Lesson 4 (Tabular)
     output: web
     title: Course 2020
   - folderitems:

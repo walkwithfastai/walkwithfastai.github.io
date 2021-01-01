@@ -55,6 +55,10 @@
 				"SHAP and fastinference": "/SHAP",
 				"ClassConfusion and fastinference": "/ClassConfusion",
 				"Doing Research": "/Research"
+			},
+			"Lesson 4 (Tabular)": {
+				"TabNet": "/TabNet",
+				"Time Series": "/TimeSeries"
 			}
 		}
 	},
