@@ -115,6 +115,18 @@ entries:
           title: The Tabular API with Binary Classification
           url: /Adults
         title: Lesson 1 (Tabular)
+      - output: web
+        subfolderitems:
+        - output: web,pdf
+          title: Regression and Permutation Importance
+          url: /Regression_and_Permutation_Importance
+        - output: web,pdf
+          title: Ensembling with Other Libraries
+          url: /Ensembling
+        - output: web,pdf
+          title: Bayesian Optimization
+          url: /Bayesian_Optimization
+        title: Lesson 2 (Tabular)
     output: web
     title: Course 2020
   - folderitems:

@@ -45,6 +45,11 @@
 			"Lesson 1 (Tabular)": {
 				"Introduction to Pandas": "/Pandas",
 				"The Tabular API with Binary Classification": "/Adults"
+			},
+			"Lesson 2 (Tabular)": {
+				"Regression and Permutation Importance": "/Regression_and_Permutation_Importance",
+				"Ensembling with Other Libraries": "/Ensembling",
+				"Bayesian Optimization": "/Bayesian_Optimization"
 			}
 		}
 	},
