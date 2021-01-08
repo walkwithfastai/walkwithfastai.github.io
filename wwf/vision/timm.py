@@ -27,7 +27,7 @@ def create_timm_model(arch:str, n_out, cut=None, pretrained=True, n_in=3, init=n
     "Create custom architecture using `arch`, `n_in` and `n_out` from the `timm` library"
     body = create_timm_body(arch, pretrained, None, n_in)
     if custom_head is None:
-        nf = num_features_model(nn.Sequential(*body.children())) * (2 if concat_pool else 1)
+        nf = num_features_model(nn.Sequential(*body.children()))
         head = create_head(nf, n_out, concat_pool=concat_pool, **kwargs)
     else: head = custom_head
     model = nn.Sequential(body, head)
