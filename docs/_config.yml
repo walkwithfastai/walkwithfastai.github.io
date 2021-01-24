@@ -1,65 +1,29 @@
-repository: walkwithfastai/walkwithfastai.github.io
-output: web
-topnav_title: walkwithfastai
-site_title: walkwithfastai
-company_name: muellerzr
-github_editme_path: 
-use_math: true
-google_analytics: 
-google_search: 
-
-exclude:
-  - .idea/
-  - .gitignore
-  - vendor
-
-feedback_disable: true
-
-highlighter: rouge
-
-markdown: kramdown
-kramdown:
- auto_ids: true
- hard_wrap: false
- syntax_highlighter: rouge
-
-default_badges:
-  colab: true
-
-collections:
-  tooltips:
-    output: false
-# collections are declared here. this renders the content in _tooltips and processes it, but doesn't output it as actual files in the output unless you change output to true
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
-      comments: true
-      search: true
-      sidebar: home_sidebar
-      topnav: topnav
-  -
-    scope:
-      path: ""
-      type: "tooltips"
-    values:
-      layout: "page"
-      comments: true
-      search: true
-      tooltip: true
-
-sidebars:
-- home_sidebar
-
-description: "Taking fastai to the next level"
-# theme: jekyll-theme-cayman
-
 baseurl: /
-url: https://walkwithfastai.com
+collections:
+  tooltips: {output: false}
+company_name: muellerzr
+default_badges: {colab: true}
+defaults:
+- scope: {path: '', type: pages}
+  values: {comments: true, layout: page, search: true, sidebar: home_sidebar, topnav: topnav}
+- scope: {path: '', type: tooltips}
+  values: {comments: true, layout: page, search: true, tooltip: true}
+description: Taking fastai to the next level
+exclude: [.idea/, .gitignore, vendor]
+feedback_disable: true
+github_editme_path: null
+google_analytics: null
+google_search: null
+highlighter: rouge
+kramdown: {auto_ids: true, hard_wrap: false, syntax_highlighter: rouge}
+markdown: kramdown
+output: web
+plugins: [jekyll-remote-theme]
+remote_theme: fastai/nbdev-jekyll-theme
+repository: walkwithfastai/walkwithfastai.github.io
+sidebars: [home_sidebar]
+site_title: walkwithfastai
+topnav_title: walkwithfastai
 twitter_username: muellerzr
-plugins:
-- jekyll-menus
+url: https://walkwithfastai.com
+use_math: true
