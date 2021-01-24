@@ -13,7 +13,7 @@ jobs:
       run: |
         pip install jupyter
         pip install -e .
-        pip install git+https://github.com/muellerzr/nbdev
+        pip install nbdev
     - name: Read all notebooks
       run: |
         nbdev_read_nbs
