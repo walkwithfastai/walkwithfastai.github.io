@@ -98,6 +98,7 @@
 		"AutoEncoders (Intermediate)": "/tab.ae"
 	},
 	"General Training Tutorials": {
-		"Finding a Learning Rate (Beginner)": "/lr_finder"
+		"Finding a Learning Rate (Beginner)": "/lr_finder",
+        "Showing Prediction Results (Beginner)": "/interp"
 	}
 }
