@@ -72,7 +72,7 @@ def style_loss(inp:Tensor, out_feat:Tensor):
 class FeatureLoss(Module):
   "Combines two losses and features into a useable loss function"
   def __init__(self, feats, style_loss, act_loss):
-    store_attr(self, 'feats, style_loss, act_loss')
+    store_attr()
     self.reset_metrics()
 
   def forward(self, pred, targ):

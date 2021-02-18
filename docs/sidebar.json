@@ -99,6 +99,7 @@
 	},
 	"General Training Tutorials": {
 		"Finding a Learning Rate (Beginner)": "/lr_finder",
-        "Showing Prediction Results (Beginner)": "/interp"
+        "Showing Prediction Results (Beginner)": "/basics.interp",
+        "Expanding the Training Loop (Beginner)": "/basics.training_loop",
 	}
 }
