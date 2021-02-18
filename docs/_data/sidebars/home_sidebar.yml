@@ -212,7 +212,10 @@ entries:
       url: /lr_finder
     - output: web,pdf
       title: Showing Prediction Results (Beginner)
-      url: /interp
+      url: /basics.interp
+    - output: web,pdf
+      title: Expanding the Training Loop (Beginner)
+      url: /basics.training_loop
     output: web
     title: General Training Tutorials
   output: web
