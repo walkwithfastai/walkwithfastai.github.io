@@ -45,6 +45,8 @@ def _print_cb(cb:Callback, event:str, indent:int=0):
     "Prints what `cb` does during `event` with potential `indent`"
     if getattr(cb, event).__doc__ is not None:
         print(f'{" "*(indent+4)} - {cb}: \n{" "*(indent+8)} - {getattr(cb, event).__doc__}')
+    else:
+        print(f'{" "*(indent+4)} - {cb})
 
 # Cell
 @patch
