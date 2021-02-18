@@ -43,8 +43,8 @@ from fastai.learner import _loop, Learner #list of all fastai events
 # Cell
 def _print_cb(cb:Callback, event:str, indent:int=0):
     "Prints what `cb` does during `event` with potential `indent`"
-    doc_string = getattr(cb,event).__doc__
-    print(f'{" "*(indent+4)} - {cb}: \n{" "*(indent+8)} - {getattr(cb, event).__doc__}')
+    if getattr(cb, event).__doc__ is not None:
+        print(f'{" "*(indent+4)} - {cb}: \n{" "*(indent+8)} - {getattr(cb, event).__doc__}')
 
 # Cell
 @patch
@@ -62,3 +62,4 @@ def show_training_loop(self:Learner, verbose:bool=False, cbs:Union[None,list,Cal
                 print(f'{" "*indent} - {s}:')
                 for cb in self.ordered_cbs(s):
                     _print_cb(cb, s, indent)
+    if cbs is not None: self.remove_cbs(cbs) if is_listy(cbs) else self.remove_cbs(listify(cbs))
