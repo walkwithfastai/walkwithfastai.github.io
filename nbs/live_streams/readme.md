@@ -7,3 +7,5 @@ These notebooks come from the various live streams I do on youtube from my [chan
 ### 2/19/2021: [Exploring fastai's Callback System](https://youtu.be/DIYWATB4B0I)
 
 ### 2/26/2021: [fastai Loss Functions and LossMetric](https://youtu.be/6HNA90qLu4A)
+
+### 3/5/2021: [Model Splits, Layer Groups, and Torch Optimizers](https://youtu.be/UFS3FxsfIYA)
