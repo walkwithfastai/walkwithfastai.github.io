@@ -47,9 +47,9 @@ nb_path: "nbs/00_utils.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="get_version" class="doc_header"><code>get_version</code><a href="https://github.com/walkwithfastai/walkwithfastai.github.io/tree/master/wwf/utils.py#L7" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_version</code>(<strong><code>lib</code></strong>:<code>str</code>)</p>
+<h4 id="get_version" class="doc_header"><code>get_version</code><a href="https://github.com/walkwithfastai/walkwithfastai.github.io/tree/master/wwf/utils.py#L7" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_version</code>(<strong><code>lib</code></strong>)</p>
 </blockquote>
-<p>Returns version of <code>lib</code></p>
+<p>Returns version of <code>lib</code>, can be either a <code>str</code> representation or the module itself</p>
 
 </div>
 
@@ -64,6 +64,87 @@ nb_path: "nbs/00_utils.ipynb"
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>An example with a <code>str</code>:</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">get_version</span><span class="p">(</span><span class="s1">&#39;fastai&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;2.2.5&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>And an example with the module itself:</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">fastai</span>
+<span class="n">get_version</span><span class="p">(</span><span class="n">fastai</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;2.2.5&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
 
 </div>
     {% endraw %}
@@ -79,7 +160,7 @@ nb_path: "nbs/00_utils.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="state_versions" class="doc_header"><code>state_versions</code><a href="https://github.com/walkwithfastai/walkwithfastai.github.io/tree/master/wwf/utils.py#L13" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>state_versions</code>(<strong><code>libs</code></strong>:<code>list</code>=<em><code>[]</code></em>)</p>
+<h4 id="state_versions" class="doc_header"><code>state_versions</code><a href="https://github.com/walkwithfastai/walkwithfastai.github.io/tree/master/wwf/utils.py#L19" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>state_versions</code>(<strong>*<code>libs</code></strong>)</p>
 </blockquote>
 <p>State all the versions currently installed from <code>libs</code> in Markdown</p>
 
@@ -103,6 +184,7 @@ nb_path: "nbs/00_utils.ipynb"
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Example usage:</p>
+<p>As strings:</p>
 
 </div>
 </div>
@@ -114,7 +196,7 @@ nb_path: "nbs/00_utils.ipynb"
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">state_versions</span><span class="p">([</span><span class="s1">&#39;fastai&#39;</span><span class="p">,</span> <span class="s1">&#39;fastcore&#39;</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">state_versions</span><span class="p">(</span><span class="s1">&#39;fastai&#39;</span><span class="p">,</span> <span class="s1">&#39;fastcore&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -133,8 +215,110 @@ nb_path: "nbs/00_utils.ipynb"
 will be code snippets that you can then run in any environment.</p>
 <p>Below are the versions of <code>fastai</code> and <code>fastcore</code> currently running at the time of writing this:</p>
 <ul>
-<li><code>fastai</code>: 2.1.9 </li>
-<li><code>fastcore</code>: 1.3.12 </li>
+<li><code>fastai</code> : 2.2.5 </li>
+<li><code>fastcore</code> : 1.3.19 </li>
+</ul>
+<hr>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>As direct modules:</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">fastai</span><span class="o">,</span> <span class="nn">fastcore</span>
+<span class="n">state_versions</span><span class="p">(</span><span class="n">fastai</span><span class="p">,</span> <span class="n">fastcore</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea output_execute_result">
+<hr>
+<p>This article is also a Jupyter Notebook available to be run from the top down. There
+will be code snippets that you can then run in any environment.</p>
+<p>Below are the versions of <code>fastai</code> and <code>fastcore</code> currently running at the time of writing this:</p>
+<ul>
+<li><code>fastai</code> : 2.2.5 </li>
+<li><code>fastcore</code> : 1.3.19 </li>
+</ul>
+<hr>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">state_versions</span><span class="p">([</span><span class="n">fastai</span><span class="p">,</span> <span class="n">fastcore</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/mnt/d/lib/python3.7/site-packages/ipykernel_launcher.py:17: DeprecationWarning: Passing in a list of libraries will be deprecated, you should pass them directly such as:
+        `state_versions(fastai, fastcore)`
+        or:
+        `state_versions(&#39;fastai&#39;, &#39;fastcore&#39;)`
+        
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea output_execute_result">
+<hr>
+<p>This article is also a Jupyter Notebook available to be run from the top down. There
+will be code snippets that you can then run in any environment.</p>
+<p>Below are the versions of <code>fastai</code> and <code>fastcore</code> currently running at the time of writing this:</p>
+<ul>
+<li><code>fastai</code> : 2.2.5 </li>
+<li><code>fastcore</code> : 1.3.19 </li>
 </ul>
 <hr>
 
