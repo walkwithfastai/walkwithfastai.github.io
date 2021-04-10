@@ -1,4 +1,3 @@
-
 # Walk with fastai
 
 
