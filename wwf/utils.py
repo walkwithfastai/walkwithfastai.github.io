@@ -4,13 +4,19 @@ __all__ = ['get_version', 'state_versions']
 
 # Cell
 from importlib_metadata import version
-def get_version(lib:str):
-    "Returns version of `lib`"
-    return version(lib)
+def get_version(lib):
+    "Returns version of `lib`, can be either a `str` representation or the module itself"
+    if isinstance(lib, str): return version(lib)
+    else:
+        try:
+            return lib.__version__
+        except:
+            raise TypeError('`lib` should either be the string name of the module or the module itself')
 
 # Cell
 from IPython.display import Markdown
-def state_versions(libs:list=[]):
+import warnings
+def state_versions(*libs):
     "State all the versions currently installed from `libs` in Markdown"
     cell = f"""
 ---
@@ -18,17 +24,25 @@ This article is also a Jupyter Notebook available to be run from the top down. T
 will be code snippets that you can then run in any environment.
 
 """
+    if isinstance(libs[0], list):
+        warnings.warn('''Passing in a list of libraries will be deprecated, you should pass them directly such as:
+        `state_versions(fastai, fastcore)`
+        or:
+        `state_versions('fastai', 'fastcore')`
+        ''', category=DeprecationWarning)
+        libs = libs[0]
     cell += 'Below are the versions of '
     for i, lib in enumerate(libs):
-        if len(libs) == 1: cell += f'`{str(lib)}`'
+        nm = lib if isinstance(lib, str) else lib.__name__
+        if len(libs) == 1: cell += f'`{nm}`'
         elif i < len(libs)-1:
-            cell += ''.join(f'`{str(lib)}`')
+            cell += ''.join(f'`{nm}`')
             if len(libs) > 2: cell += ', '
             else: cell += ' '
-        elif len(libs) > 1: cell += ''.join(f'and `{str(lib)}`')
+        elif len(libs) > 1: cell += ''.join(f'and `{nm}`')
     cell += ' currently running at the time of writing this:\n'
-    cell += ''.join([
-        f'* `{str(lib)}`: {get_version(str(lib))} \n'
-    for lib in libs])
+    for lib in libs:
+        nm = lib if isinstance(lib, str) else lib.__name__
+        cell += f'* `{nm}` : {get_version(lib)} \n'
     cell += '---'
     return Markdown(cell)
