@@ -347,11 +347,19 @@ li.dropdownActive a {
     color: orange;
 }
 
+.navbar-inverse {
+ background-color: forestgreen !important;   
+}
 
 .navbar-inverse .navbar-nav > li > a {
     background-color: transparent;
     margin-top:10px;
 }
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    background-color: forestgreen;
+}
+
 
 .post-content .rssfeedLink {
     color: #248EC2;
@@ -416,17 +424,18 @@ a.accordion-toggle, a.accordion-collapsed {
 .nav li > a > span:after {
     content: '\25be';
 }
+
 .nav li.active > a > span:after {
     content: '\25b4';
 }
 
 .nav a:hover, .nav li.active > a {
-    background-color: #8D8D8D;
+    background-color: forestgreen !important;
     color: #f5f5f5;
 }
 
-.nav > li.active > a  {
-background-color: #347DBE;
+.nav > li.active > a   {
+  background-color: forestgreen !important;
 }
 
 .nav li a {
@@ -467,7 +476,7 @@ ul#mysidebar {
 }
 
 .nav li a:hover {
-    background-color: #8D8D8D;
+    background-color: forestgreen;
 }
 
 .nav ul li a {
