@@ -499,7 +499,7 @@ span.projectTitle {
 }
 
 .footer {
-    text-align: right;
+    text-align: center;
 }
 
 .footerMeta {
@@ -1063,6 +1063,7 @@ span.label.label-default {
 span.label.label-primary {
     background-color: #f0ad4e;
 }
+
 .col-lg-12 .nav li a {background-color: white}
 
 
