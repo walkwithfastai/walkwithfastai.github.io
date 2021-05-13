@@ -1,12 +1,12 @@
 .summary {
     color: #808080;
-    border-left: 5px solid #E50E51;
+    border-left: 5px solid #ED1951;
     font-size:16px;
 }
 
 
-h3 {color: #E50E51; }
-h4 {color: #808080; }
+h3 {color: #000000; }
+h4 {color: #000000; }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
     background-color: #248ec2;
@@ -105,6 +105,9 @@ li.sidebarTitle {
     margin-left: 5px;
 }
 
-.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
-    background-color: #E50E51;
+	.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {	
+    background-color: #015CAE;	
+}	
+.navbar-inverse .navbar-toggle {	
+    border-color: #015CAE;	
 }
