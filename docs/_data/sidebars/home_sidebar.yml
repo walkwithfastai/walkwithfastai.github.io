@@ -7,9 +7,6 @@ entries:
 - folders:
   - folderitems:
     - output: web,pdf
-      title: About Me
-      url: /aboutme
-    - output: web,pdf
       title: How to Contribute a Chapter
       url: /intro.contribute
     output: web
@@ -209,6 +206,12 @@ entries:
       url: /tab.ae
     output: web
     title: Tabular
+  - folderitems:
+    - output: web,pdf
+      title: Transformers and fastai (Intermediate)
+      url: /nlp.external.transformers-glue
+    output: web
+    title: Text
   - folderitems:
     - output: web,pdf
       title: Finding a Learning Rate (Beginner)
