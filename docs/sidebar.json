@@ -97,6 +97,9 @@
 		},
 		"AutoEncoders (Intermediate)": "/tab.ae"
 	},
+    "Text": {
+        "Transformers and fastai (Intermediate)": "/nlp.external.transformers-glue"
+    },
 	"General Training Tutorials": {
 		"Finding a Learning Rate (Beginner)": "/lr_finder",
         "Showing Prediction Results (Beginner)": "/basics.interp",

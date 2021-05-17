@@ -208,6 +208,12 @@ entries:
     title: Tabular
   - folderitems:
     - output: web,pdf
+      title: Transformers and fastai (Intermediate)
+      url: /nlp.external.transformers-glue
+    output: web
+    title: Text
+  - folderitems:
+    - output: web,pdf
       title: Finding a Learning Rate (Beginner)
       url: /lr_finder
     - output: web,pdf
