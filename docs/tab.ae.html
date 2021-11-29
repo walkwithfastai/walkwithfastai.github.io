@@ -26,6 +26,21 @@ nb_path: "nbs/03_tab.ae.ipynb"
     
 <div class="cell border-box-sizing code_cell rendered">
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/mnt/d/jupyter/anaconda3/envs/nbagile/lib/python3.7/site-packages/fastprogress/fastprogress.py:102: UserWarning: Couldn&#39;t import ipywidgets properly, progress bar will use console behavior
+  warn(&#34;Couldn&#39;t import ipywidgets properly, progress bar will use console behavior&#34;)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     {% endraw %}
 
@@ -92,7 +107,7 @@ will be code snippets that you can then run in any environment.</p>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The base of this model is extremely similar to <code>fastai</code>'s <a href="https://docs.fast.ai/tabular.model#TabularModel"><code>TabularModel</code></a>, minus a few distinctions:</p>
+<p>The base of this model is extremely similar to <code>fastai</code>'s <code>TabularModel</code>, minus a few distinctions:</p>
 <ul>
 <li>Our inputs immediatly pass through a <code>BatchSwapNoise</code> module, based on the <a href="https://forums.fast.ai/t/porto-seguro-winning-solution-representation-learning/8499?page=2">Porto Seguro Winning Solution</a> which inputs random noise into our data for variability</li>
 <li>After going through the embedding matrix the "layers" of our model include an <code>Encoder</code> and <code>Decoder</code> (shown below) which compresses our data to a 128-long vector before blowing it back up in the decoder</li>
@@ -339,7 +354,7 @@ will be code snippets that you can then run in any environment.</p>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="ReadTabBatchIdentity">ReadTabBatchIdentity<a class="anchor-link" href="#ReadTabBatchIdentity"> </a></h3><p><code>fastai</code> normally has <a href="https://docs.fast.ai/tabular.core#ReadTabBatch"><code>ReadTabBatch</code></a> as an <a href="https://fastcore.fast.ai/transform#ItemTransform"><code>ItemTransform</code></a> in order to load in the outputs from a <a href="https://docs.fast.ai/tabular.core#TabularPandas"><code>TabularPandas</code></a> object. We need to modify this slightly, so instead of returning <code>x,y</code>, we return pairs of <code>x,x</code>:</p>
+<h3 id="ReadTabBatchIdentity">ReadTabBatchIdentity<a class="anchor-link" href="#ReadTabBatchIdentity"> </a></h3><p><code>fastai</code> normally has <code>ReadTabBatch</code> as an <a href="https://fastcore.fast.ai/transform#ItemTransform"><code>ItemTransform</code></a> in order to load in the outputs from a <code>TabularPandas</code> object. We need to modify this slightly, so instead of returning <code>x,y</code>, we return pairs of <code>x,x</code>:</p>
 
 </div>
 </div>
@@ -373,7 +388,7 @@ will be code snippets that you can then run in any environment.</p>
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="TabDataLoaderIdentity">TabDataLoaderIdentity<a class="anchor-link" href="#TabDataLoaderIdentity"> </a></h3><p>Next we need a way to use our new transform, and that is through a new <a href="https://docs.fast.ai/data.load#DataLoader"><code>DataLoader</code></a>:</p>
+<h3 id="TabDataLoaderIdentity">TabDataLoaderIdentity<a class="anchor-link" href="#TabDataLoaderIdentity"> </a></h3><p>Next we need a way to use our new transform, and that is through a new <code>DataLoader</code>:</p>
 
 </div>
 </div>
@@ -405,7 +420,7 @@ will be code snippets that you can then run in any environment.</p>
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We also need to make <code>TabularPandasIdentity</code>'s <code>dl_type</code> to <code>TabDataLoaderIdentity</code> so it knows just what type of <a href="https://docs.fast.ai/data.load#DataLoader"><code>DataLoader</code></a> to generate:</p>
+<p>We also need to make <code>TabularPandasIdentity</code>'s <code>dl_type</code> to <code>TabDataLoaderIdentity</code> so it knows just what type of <code>DataLoader</code> to generate:</p>
 
 </div>
 </div>
@@ -429,7 +444,7 @@ will be code snippets that you can then run in any environment.</p>
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Building-the-TabularPandasIdentity">Building the <code>TabularPandasIdentity</code><a class="anchor-link" href="#Building-the-TabularPandasIdentity"> </a></h2><p>Now we can build our <code>to</code> object and the <a href="https://docs.fast.ai/data.core#DataLoaders"><code>DataLoaders</code></a>:</p>
+<h2 id="Building-the-TabularPandasIdentity">Building the <code>TabularPandasIdentity</code><a class="anchor-link" href="#Building-the-TabularPandasIdentity"> </a></h2><p>Now we can build our <code>to</code> object and the <code>DataLoaders</code>:</p>
 
 </div>
 </div>
@@ -538,7 +553,7 @@ will be code snippets that you can then run in any environment.</p>
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We will then use this dictionary to figure out where to apply our <a href="https://docs.fast.ai/losses#CrossEntropyLossFlat"><code>CrossEntropyLossFlat</code></a> for each categorical variable.</p>
+<p>We will then use this dictionary to figure out where to apply our <code>CrossEntropyLossFlat</code> for each categorical variable.</p>
 <p>We'll also need to know the total number of outputs possible for those variables:</p>
 
 </div>
@@ -705,7 +720,7 @@ will be code snippets that you can then run in any environment.</p>
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="RecreatedLoss">RecreatedLoss<a class="anchor-link" href="#RecreatedLoss"> </a></h3><p>Next we'll make our loss function. As mentioned, this loss function will run <a href="https://docs.fast.ai/losses#MSELossFlat"><code>MSELossFlat</code></a> on the continuous variables to measure accuracy and run <a href="https://docs.fast.ai/losses#CrossEntropyLossFlat"><code>CrossEntropyLossFlat</code></a> for the categoricals:</p>
+<h3 id="RecreatedLoss">RecreatedLoss<a class="anchor-link" href="#RecreatedLoss"> </a></h3><p>Next we'll make our loss function. As mentioned, this loss function will run <code>MSELossFlat</code> on the continuous variables to measure accuracy and run <code>CrossEntropyLossFlat</code> for the categoricals:</p>
 
 </div>
 </div>
@@ -913,7 +928,7 @@ will be code snippets that you can then run in any environment.</p>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">TabularAE</span><span class="p">(</span><span class="n">emb_szs</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">cont_names</span><span class="p">),</span> <span class="mi">128</span><span class="p">,</span> <span class="n">ps</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">cats</span><span class="o">=</span><span class="n">total_cats</span><span class="p">,</span> <span class="n">embed_p</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span>
-                  <span class="n">bswap</span><span class="o">=.</span><span class="mi">1</span><span class="p">,</span> <span class="n">low</span><span class="o">=</span><span class="n">tensor</span><span class="p">(</span><span class="n">low</span><span class="p">)</span><span class="o">.</span><span class="n">cuda</span><span class="p">(),</span> <span class="n">high</span><span class="o">=</span><span class="n">tensor</span><span class="p">(</span><span class="n">high</span><span class="p">)</span><span class="o">.</span><span class="n">cuda</span><span class="p">())</span>
+                  <span class="n">bswap</span><span class="o">=</span><span class="mf">.1</span><span class="p">,</span> <span class="n">low</span><span class="o">=</span><span class="n">tensor</span><span class="p">(</span><span class="n">low</span><span class="p">)</span><span class="o">.</span><span class="n">cuda</span><span class="p">(),</span> <span class="n">high</span><span class="o">=</span><span class="n">tensor</span><span class="p">(</span><span class="n">high</span><span class="p">)</span><span class="o">.</span><span class="n">cuda</span><span class="p">())</span>
 </pre></div>
 
     </div>
@@ -925,7 +940,7 @@ will be code snippets that you can then run in any environment.</p>
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>And finally our <a href="https://docs.fast.ai/learner#Learner"><code>Learner</code></a>:</p>
+<p>And finally our <code>Learner</code>:</p>
 
 </div>
 </div>
@@ -949,14 +964,14 @@ will be code snippets that you can then run in any environment.</p>
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>{% include note.html content='we are using the <a href="https://docs.fast.ai/optimizer#ranger"><code>ranger</code></a> optimizer here. During experiments we found it could train much better representations than Adam with fit/fit_one_cycle' %}</p>
+<p>{% include note.html content='we are using the <code>ranger</code> optimizer here. During experiments we found it could train much better representations than Adam with fit/fit_one_cycle' %}</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>And now we'll fit until we begin overfitting (with <a href="https://docs.fast.ai/callback.tracker#EarlyStoppingCallback"><code>EarlyStoppingCallback</code></a>):</p>
+<p>And now we'll fit until we begin overfitting (with <code>EarlyStoppingCallback</code>):</p>
 
 </div>
 </div>
@@ -1064,7 +1079,7 @@ will be code snippets that you can then run in any environment.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Getting-the-compressed-representations">Getting the compressed representations<a class="anchor-link" href="#Getting-the-compressed-representations"> </a></h2><p>We're going to first gather the representations and grade them, before attempting to train a new classification model on the dataset.</p>
-<p>To begin we need to make a new <a href="https://docs.fast.ai/data.load#DataLoader"><code>DataLoader</code></a> with all of our data:</p>
+<p>To begin we need to make a new <code>DataLoader</code> with all of our data:</p>
 
 </div>
 </div>
@@ -1104,7 +1119,7 @@ will be code snippets that you can then run in any environment.</p>
 <span class="k">for</span> <span class="n">batch</span> <span class="ow">in</span> <span class="n">dl</span><span class="p">:</span>
     <span class="k">with</span> <span class="n">torch</span><span class="o">.</span><span class="n">no_grad</span><span class="p">():</span>
         <span class="n">learn</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>
-        <span class="n">learn</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">cuda</span><span class="p">()</span>
+        <span class="n">learn</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">cpu</span><span class="p">()</span>
         <span class="n">out</span> <span class="o">=</span> <span class="n">learn</span><span class="o">.</span><span class="n">model</span><span class="p">(</span><span class="o">*</span><span class="n">batch</span><span class="p">[:</span><span class="mi">2</span><span class="p">],</span> <span class="n">encode</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">cpu</span><span class="p">()</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
         <span class="n">outs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">out</span><span class="p">)</span>
 <span class="n">outs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">(</span><span class="n">outs</span><span class="p">)</span>
@@ -1729,7 +1744,7 @@ dtype: float64</pre>
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Next we'll make a new <a href="https://docs.fast.ai/tabular.core#TabularPandas"><code>TabularPandas</code></a> object and set it up exactly like we normally would for the <code>Adult</code> problem:</p>
+<p>Next we'll make a new <code>TabularPandas</code> object and set it up exactly like we normally would for the <code>Adult</code> problem:</p>
 
 </div>
 </div>
@@ -1756,7 +1771,7 @@ dtype: float64</pre>
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Build our <a href="https://docs.fast.ai/data.core#DataLoaders"><code>DataLoaders</code></a>:</p>
+<p>Build our <code>DataLoaders</code>:</p>
 
 </div>
 </div>
@@ -1781,7 +1796,7 @@ dtype: float64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>And then train</p>
-<blockquote><p>We need to redefine <a href="https://docs.fast.ai/metrics#accuracy"><code>accuracy</code></a> since currently it holds a <code>DataFrame</code></p>
+<blockquote><p>We need to redefine <code>accuracy</code> since currently it holds a <code>DataFrame</code></p>
 </blockquote>
 
 </div>
