@@ -513,7 +513,7 @@ To: /content/Portrait.zip
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_msk</span><span class="p">(</span><span class="n">fn</span><span class="p">,</span> <span class="n">pix2class</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_msk</span><span class="p">(</span><span class="n">fn</span><span class="p">,</span> <span class="n">p2c</span><span class="p">):</span>
   <span class="s2">&quot;Grab a mask from a `filename` and adjust the pixels based on `pix2class`&quot;</span>
   <span class="n">fn</span> <span class="o">=</span> <span class="n">path</span><span class="o">/</span><span class="s1">&#39;GT_png&#39;</span><span class="o">/</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">fn</span><span class="o">.</span><span class="n">stem</span><span class="si">}</span><span class="s1">_mask.png&#39;</span>
   <span class="n">msk</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">PILMask</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">fn</span><span class="p">))</span>
