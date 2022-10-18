@@ -8,6 +8,11 @@ sidebar: home_sidebar
 
 ---
 
+## Something is Coming...
+
+[Find out more](https://thezachmueller.gumroad.com/p/walk-with-fastai-revisited)
+
+
 ## Welcome to Walk with fastai!
 
 This project was started by me [(Zachary Mueller)](https://walkwithfastai.com/aboutme) as a way to collect interesting techniques dotted throughout the [fast.ai forums](forums.fast.ai), my own course materials, and the fantastic work of others into one centralized place.
