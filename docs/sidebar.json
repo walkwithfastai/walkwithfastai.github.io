@@ -2,6 +2,9 @@
 	"Introduction": {
 		"How to Contribute a Chapter": "/intro.contribute"
 	},
+	"Other Courses": {
+		"Walk with fastai revisited": "https://store.walkwithfastai.com/walk-with-fastai-revisited"
+	},
 	"Course 2020": {
 		"Introduction": "/Introduction",
 		"": {

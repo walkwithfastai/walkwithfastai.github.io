@@ -8,9 +8,10 @@ sidebar: home_sidebar
 
 ---
 
-## Something is Coming...
+## A new version of Walk with fastai has been released!
 
-[Find out more](https://thezachmueller.gumroad.com/p/walk-with-fastai-revisited)
+Please check out the latest version of Walk with fastai [here](https://store.walkwithfastai.com/walk-with-fastai-revisited) which contains updated notebooks and content, as well as other courses available!
+
 
 
 ## Welcome to Walk with fastai!
