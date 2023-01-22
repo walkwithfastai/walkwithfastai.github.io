@@ -12,7 +12,7 @@ description: Taking fastai to the next level
 exclude: [.idea/, .gitignore, vendor]
 feedback_disable: true
 github_editme_path: null
-google_analytics: null
+google_analytics: G-GKQJWZYF50
 google_search: null
 highlighter: rouge
 kramdown: {auto_ids: true, hard_wrap: false, syntax_highlighter: rouge}
